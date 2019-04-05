@@ -1,0 +1,66 @@
+<title>Vdbench nvme_1vm_raid5_read_seq_ran_8k_64t_w30_f3000/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+10:37:49.810 10:37:49.809 SlaveJvm execution parameter:  '-m localhost'
+10:37:49.811 10:37:49.810 SlaveJvm execution parameter:  '-n localhost-10-190405-10.37.49.490'
+10:37:49.811 10:37:49.810 SlaveJvm execution parameter:  '-l localhost-0'
+10:37:49.811 10:37:49.810 SlaveJvm execution parameter:  '-p 5570'
+10:37:49.811 10:37:49.810 SlaveJvm positional parameter: 'SlaveJvm'
+10:37:49.913 10:37:49.912 successfully connected to master localhost
+10:37:49.914 10:37:49.913 Connection to localhost using port 5570 successful
+10:37:49.994 10:37:49.994 ticks_per_second: 100
+10:37:50.000 10:37:50.000 execute(): ls -l /data
+10:37:50.020 10:37:50.019 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_1174290147">rd1 For loops: None</A>
+
+10:37:50.232 10:37:50.232 Beginning of run setup
+10:37:50.232 10:37:50.232 **********************
+10:37:50.233 
+10:37:50.233 
+10:37:50.246 10:37:50.246 File '/var/log/messages.1' does not exist. Monitoring bypassed
+10:37:50.289 10:37:50.289 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+10:37:50.298 10:37:50.298 Completed the creation of the directory list for /data: 30 directories.
+10:37:51.133 10:37:51.132 Generated 90,000 file names; total anchor size: 274.026g (294,232,912,786)
+10:37:51.133 10:37:51.132 During anchor creation for anchor=/data there were 30 directories and 90000 files
+10:37:51.133 10:37:51.132 Completed initializeFileAnchor for fsd1: 0.84
+10:37:51.151 10:37:51.150 Started 64 threads for fwd=fwd1,fsd=fsd1,operation=read
+10:37:51.151 10:37:51.150 Started 64 FwgThreads for rd=rd1 For loops: None
+10:37:51.151 10:37:51.150 Waiting for task synchronization
+10:37:51.151 10:37:51.150 Requesting full garbage collection
+10:37:51.151 10:37:51.151 GcTracker: cum:   5 intv:  5 ms:      88 mss:  0.00% Heap_MB max:   911 curr:   221 used:   140 free:    80 
+10:37:51.217 10:37:51.217 GcTracker: cum:   7 intv:  2 ms:      64 mss:  0.00% Heap_MB max:   911 curr:   359 used:    28 free:   331 
+10:37:51.217 10:37:51.217 task_wait_start_complete() end
+
+<a name="_1174290147"></a><i><b>10:37:52.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+10:37:52.003 10:37:52.002 task_run_all(): 65 tasks
+10:38:05.254 10:38:05.253 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Created slice User Slice of zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Starting User Slice of zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Started Session 4502 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Starting Session 4502 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Started Session 4501 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Starting Session 4501 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Started Session 4503 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost systemd:Starting Session 4503 of user zabbix.
+10:38:05.255 10:38:05.253 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:01 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+10:38:05.255 10:38:05.254 sendMessageToConsole: 
+10:38:10.260 10:38:10.259 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+10:38:10.260 10:38:10.259 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:07 localhost systemd:Removed slice User Slice of zabbix.
+10:38:10.260 10:38:10.259 sendMessageToConsole: /var/log/messages: 2019-04-05 10:38:07 localhost systemd:Stopping User Slice of zabbix.
+10:38:10.260 10:38:10.259 sendMessageToConsole: 
+10:38:52.132 10:38:52.131 
+10:38:52.132 10:38:52.131 Miscellaneous statistics:
+10:38:52.132 10:38:52.131 READ_OPENS          Files opened for read activity:             109,229
+10:38:52.132 10:38:52.131 FILE_BUSY           File busy:                                       85
+10:38:52.132 10:38:52.131 FILE_CLOSES         Close requests:                             109,229
+10:38:52.132 10:38:52.131 
+10:38:52.132 10:38:52.132 Java Heap in MB. max:  910.500; current:  254.500; used:  131.032; free:  123.468
+10:38:52.132 10:38:52.132 Maximum native memory allocation:      524,288; Current allocation:      524,288
+10:38:52.132 10:38:52.132 End of run
+10:38:52.132 10:38:52.132 **********
+10:38:52.132 
+10:38:52.132 
+10:38:53.173 10:38:53.173 Master is requesting slave shutdown
+10:38:53.173 10:38:53.173 Java Heap in MB. max:  910.500; current:  254.500; used:  131.046; free:  123.454
