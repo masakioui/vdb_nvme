@@ -1,0 +1,770 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+23:04:11.292 23:04:11.292 SlaveJvm execution parameter:  '-m localhost'
+23:04:11.293 23:04:11.292 SlaveJvm execution parameter:  '-n localhost-10-190403-23.04.10.778'
+23:04:11.293 23:04:11.292 SlaveJvm execution parameter:  '-l localhost-0'
+23:04:11.293 23:04:11.292 SlaveJvm execution parameter:  '-p 5570'
+23:04:11.293 23:04:11.292 SlaveJvm positional parameter: 'SlaveJvm'
+23:04:11.392 23:04:11.391 successfully connected to master localhost
+23:04:11.392 23:04:11.392 Connection to localhost using port 5570 successful
+23:04:11.473 23:04:11.473 ticks_per_second: 100
+23:04:11.479 23:04:11.479 execute(): ls -l /data
+23:04:11.497 23:04:11.497 Configuration interpretation took 0.02 seconds
+
+Link to Run Definitions:         <A HREF="#_1212899836">format_for_rd1 For loops: None</A>
+
+23:04:11.691 23:04:11.690 Beginning of run setup
+23:04:11.692 23:04:11.690 **********************
+23:04:11.692 
+23:04:11.692 
+23:04:11.755 23:04:11.754 File '/var/log/messages.1' does not exist. Monitoring bypassed
+23:04:11.764 23:04:11.764 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+23:04:11.884 23:04:11.884 Completed the creation of the directory list for /data: 1,200 directories.
+23:04:15.312 23:04:15.311 Generated 3,600,000 file names; total anchor size: 10.690t (11,753,569,850,304)
+23:04:15.312 23:04:15.312 Completed initializeFileAnchor for fsd1: 3.55
+23:04:15.331 23:04:15.330 Started 8 threads for fwd=format,fsd=fsd1
+23:04:15.331 23:04:15.330 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+23:04:15.331 23:04:15.330 Waiting for task synchronization
+23:04:15.331 23:04:15.330 Requesting full garbage collection
+23:04:15.331 23:04:15.330 GcTracker: cum:   8 intv:  8 ms:   3,071 mss:  0.00% Heap_MB max:   911 curr:   624 used:   278 free:   346 
+23:04:16.408 23:04:16.407 GcTracker: cum:  10 intv:  2 ms:   1,075 mss:  0.00% Heap_MB max:   911 curr:   717 used:   279 free:   437 
+23:04:16.408 23:04:16.407 task_wait_start_complete() end
+
+<a name="_1212899836"></a><i><b>23:04:17.002 Starting RD=format_for_rd1</b></i>
+
+23:04:17.003 23:04:17.003 task_run_all(): 9 tasks
+23:04:17.480 23:04:17.479 Message to master: anchor=/data mkdir complete.
+23:04:21.762 23:04:21.761 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:04:21.762 23:04:21.761 sendMessageToConsole: /var/log/messages: 2019-04-03 23:04:17 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:04:21.762 23:04:21.761 sendMessageToConsole: 
+23:04:26.769 23:04:26.768 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:04:26.769 23:04:26.768 sendMessageToConsole: /var/log/messages: 2019-04-03 23:04:23 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:04:26.769 23:04:26.768 sendMessageToConsole: /var/log/messages: 2019-04-03 23:04:23 localhost systemd:Removed slice User Slice of root.
+23:04:26.769 23:04:26.768 sendMessageToConsole: /var/log/messages: 2019-04-03 23:04:23 localhost systemd:Stopping User Slice of root.
+23:04:26.769 23:04:26.768 sendMessageToConsole: 
+23:05:01.776 23:05:01.775 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Created slice User Slice of root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting User Slice of root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1242 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1242 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Created slice User Slice of zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting User Slice of zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1246 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1246 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1244 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1244 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1247 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1247 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1245 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1245 of user root.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Started Session 1243 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:01 localhost systemd:Starting Session 1243 of user zabbix.
+23:05:01.776 23:05:01.776 sendMessageToConsole: 
+23:05:11.784 23:05:11.783 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:05:11.784 23:05:11.783 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:07 localhost systemd:Removed slice User Slice of zabbix.
+23:05:11.784 23:05:11.783 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:07 localhost systemd:Stopping User Slice of zabbix.
+23:05:11.784 23:05:11.784 sendMessageToConsole: 
+23:05:21.795 23:05:21.794 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:05:21.796 23:05:21.795 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:17 localhost monit:'watchfrr' process is not running
+23:05:21.796 23:05:21.795 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:17 localhost monit:'watchfrr' trying to restart
+23:05:21.796 23:05:21.795 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:17 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:05:21.796 23:05:21.795 sendMessageToConsole: 
+23:05:29.627 23:05:29.626 Message to master: anchor=/data: Created 36,000 of 3,600,000 files (1.00%)
+23:05:51.803 23:05:51.802 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:05:51.803 23:05:51.802 sendMessageToConsole: /var/log/messages: 2019-04-03 23:05:49 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:05:51.803 23:05:51.802 sendMessageToConsole: 
+23:06:01.809 23:06:01.808 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:06:01.809 23:06:01.808 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Created slice User Slice of zabbix.
+23:06:01.809 23:06:01.808 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Starting User Slice of zabbix.
+23:06:01.809 23:06:01.808 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Started Session 1248 of user zabbix.
+23:06:01.809 23:06:01.808 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Starting Session 1248 of user zabbix.
+23:06:01.809 23:06:01.808 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Started Session 1249 of user zabbix.
+23:06:01.809 23:06:01.809 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Starting Session 1249 of user zabbix.
+23:06:01.809 23:06:01.809 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Started Session 1250 of user zabbix.
+23:06:01.809 23:06:01.809 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:01 localhost systemd:Starting Session 1250 of user zabbix.
+23:06:01.809 23:06:01.809 sendMessageToConsole: 
+23:06:11.816 23:06:11.814 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:06:11.816 23:06:11.815 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:07 localhost systemd:Removed slice User Slice of zabbix.
+23:06:11.816 23:06:11.815 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:07 localhost systemd:Stopping User Slice of zabbix.
+23:06:11.816 23:06:11.815 sendMessageToConsole: 
+23:06:51.822 23:06:51.822 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:06:51.822 23:06:51.822 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:49 localhost monit:'watchfrr' process is not running
+23:06:51.822 23:06:51.822 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:49 localhost monit:'watchfrr' trying to restart
+23:06:51.822 23:06:51.822 sendMessageToConsole: /var/log/messages: 2019-04-03 23:06:49 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:06:51.822 23:06:51.822 sendMessageToConsole: 
+23:07:01.828 23:07:01.827 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Created slice User Slice of zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Starting User Slice of zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Started Session 1252 of user zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Starting Session 1252 of user zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Started Session 1253 of user zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Starting Session 1253 of user zabbix.
+23:07:01.828 23:07:01.827 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Started Session 1251 of user zabbix.
+23:07:01.828 23:07:01.828 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:01 localhost systemd:Starting Session 1251 of user zabbix.
+23:07:01.828 23:07:01.828 sendMessageToConsole: 
+23:07:11.834 23:07:11.833 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:07:11.834 23:07:11.833 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:07 localhost systemd:Removed slice User Slice of zabbix.
+23:07:11.834 23:07:11.833 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:07 localhost systemd:Stopping User Slice of zabbix.
+23:07:11.834 23:07:11.833 sendMessageToConsole: 
+23:07:21.840 23:07:21.839 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:07:21.840 23:07:21.839 sendMessageToConsole: /var/log/messages: 2019-04-03 23:07:21 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:07:21.840 23:07:21.839 sendMessageToConsole: 
+23:08:01.847 23:08:01.846 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Created slice User Slice of zabbix.
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Starting User Slice of zabbix.
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Started Session 1255 of user zabbix.
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Starting Session 1255 of user zabbix.
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Started Session 1254 of user zabbix.
+23:08:01.847 23:08:01.846 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Starting Session 1254 of user zabbix.
+23:08:01.847 23:08:01.847 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Started Session 1256 of user zabbix.
+23:08:01.847 23:08:01.847 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:01 localhost systemd:Starting Session 1256 of user zabbix.
+23:08:01.847 23:08:01.847 sendMessageToConsole: 
+23:08:04.713 23:08:04.712 Message to master: anchor=/data: Created 72,000 of 3,600,000 files (2.00%)
+23:08:06.853 23:08:06.852 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:08:06.853 23:08:06.852 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:06 localhost systemd:Removed slice User Slice of zabbix.
+23:08:06.853 23:08:06.853 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:06 localhost systemd:Stopping User Slice of zabbix.
+23:08:06.853 23:08:06.853 sendMessageToConsole: 
+23:08:21.861 23:08:21.858 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:08:21.861 23:08:21.859 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:21 localhost monit:'watchfrr' process is not running
+23:08:21.861 23:08:21.859 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:21 localhost monit:'watchfrr' trying to restart
+23:08:21.861 23:08:21.859 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:21 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:08:21.861 23:08:21.860 sendMessageToConsole: 
+23:08:26.867 23:08:26.866 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:08:26.867 23:08:26.866 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:26 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:08:26.867 23:08:26.866 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:26 localhost systemd:Removed slice User Slice of root.
+23:08:26.867 23:08:26.866 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:26 localhost systemd:Stopping User Slice of root.
+23:08:26.867 23:08:26.866 sendMessageToConsole: 
+23:08:56.877 23:08:56.876 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:08:56.878 23:08:56.877 sendMessageToConsole: /var/log/messages: 2019-04-03 23:08:53 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:08:56.878 23:08:56.877 sendMessageToConsole: 
+23:09:01.883 23:09:01.883 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:09:01.883 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Created slice User Slice of zabbix.
+23:09:01.883 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Starting User Slice of zabbix.
+23:09:01.883 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Started Session 1259 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Starting Session 1259 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Started Session 1257 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Starting Session 1257 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Started Session 1258 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:01 localhost systemd:Starting Session 1258 of user zabbix.
+23:09:01.884 23:09:01.883 sendMessageToConsole: 
+23:09:11.890 23:09:11.889 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:09:11.890 23:09:11.889 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:08 localhost systemd:Removed slice User Slice of zabbix.
+23:09:11.890 23:09:11.889 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:08 localhost systemd:Stopping User Slice of zabbix.
+23:09:11.890 23:09:11.889 sendMessageToConsole: 
+23:09:56.897 23:09:56.896 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:09:56.897 23:09:56.896 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:53 localhost monit:'watchfrr' process is not running
+23:09:56.897 23:09:56.896 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:53 localhost monit:'watchfrr' trying to restart
+23:09:56.897 23:09:56.896 sendMessageToConsole: /var/log/messages: 2019-04-03 23:09:53 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:09:56.897 23:09:56.896 sendMessageToConsole: 
+23:10:01.903 23:10:01.901 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Created slice User Slice of root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting User Slice of root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1265 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1265 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Created slice User Slice of zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting User Slice of zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1264 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1264 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1266 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1266 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1260 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1260 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1262 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1262 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1263 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1263 of user root.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Started Session 1261 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:01 localhost systemd:Starting Session 1261 of user zabbix.
+23:10:01.903 23:10:01.902 sendMessageToConsole: 
+23:10:11.910 23:10:11.908 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:10:11.910 23:10:11.909 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:07 localhost systemd:Removed slice User Slice of zabbix.
+23:10:11.910 23:10:11.909 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:07 localhost systemd:Stopping User Slice of zabbix.
+23:10:11.910 23:10:11.909 sendMessageToConsole: 
+23:10:26.915 23:10:26.915 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:10:26.916 23:10:26.915 sendMessageToConsole: /var/log/messages: 2019-04-03 23:10:25 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:10:26.916 23:10:26.915 sendMessageToConsole: 
+23:10:40.420 23:10:40.419 Message to master: anchor=/data: Created 108,000 of 3,600,000 files (3.00%)
+23:11:01.922 23:11:01.921 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:11:01.922 23:11:01.921 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Created slice User Slice of zabbix.
+23:11:01.922 23:11:01.921 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Starting User Slice of zabbix.
+23:11:01.922 23:11:01.921 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Started Session 1269 of user zabbix.
+23:11:01.922 23:11:01.921 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Starting Session 1269 of user zabbix.
+23:11:01.922 23:11:01.921 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Started Session 1268 of user zabbix.
+23:11:01.922 23:11:01.922 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Starting Session 1268 of user zabbix.
+23:11:01.922 23:11:01.922 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Started Session 1267 of user zabbix.
+23:11:01.922 23:11:01.922 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:01 localhost systemd:Starting Session 1267 of user zabbix.
+23:11:01.922 23:11:01.922 sendMessageToConsole: 
+23:11:11.928 23:11:11.928 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:11:11.928 23:11:11.928 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:07 localhost systemd:Removed slice User Slice of zabbix.
+23:11:11.928 23:11:11.928 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:07 localhost systemd:Stopping User Slice of zabbix.
+23:11:11.928 23:11:11.928 sendMessageToConsole: 
+23:11:26.935 23:11:26.934 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:11:26.935 23:11:26.935 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:25 localhost monit:'watchfrr' process is not running
+23:11:26.935 23:11:26.935 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:25 localhost monit:'watchfrr' trying to restart
+23:11:26.935 23:11:26.935 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:25 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:11:26.935 23:11:26.935 sendMessageToConsole: 
+23:12:01.943 23:12:01.942 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:11:57 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Created slice User Slice of zabbix.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Starting User Slice of zabbix.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Started Session 1271 of user zabbix.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Starting Session 1271 of user zabbix.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Started Session 1272 of user zabbix.
+23:12:01.943 23:12:01.942 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Starting Session 1272 of user zabbix.
+23:12:01.943 23:12:01.943 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Started Session 1270 of user zabbix.
+23:12:01.943 23:12:01.943 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:01 localhost systemd:Starting Session 1270 of user zabbix.
+23:12:01.943 23:12:01.943 sendMessageToConsole: 
+23:12:11.949 23:12:11.949 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:12:11.949 23:12:11.949 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:07 localhost systemd:Removed slice User Slice of zabbix.
+23:12:11.949 23:12:11.949 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:07 localhost systemd:Stopping User Slice of zabbix.
+23:12:11.949 23:12:11.949 sendMessageToConsole: 
+23:13:01.957 23:13:01.956 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:57 localhost monit:'watchfrr' process is not running
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:57 localhost monit:'watchfrr' trying to restart
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:12:57 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Created slice User Slice of zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Starting User Slice of zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Started Session 1275 of user zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Starting Session 1275 of user zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Started Session 1273 of user zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Starting Session 1273 of user zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Started Session 1274 of user zabbix.
+23:13:01.957 23:13:01.957 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:01 localhost systemd:Starting Session 1274 of user zabbix.
+23:13:01.958 23:13:01.957 sendMessageToConsole: 
+23:13:06.971 23:13:06.968 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:13:06.971 23:13:06.969 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:06 localhost systemd:Removed slice User Slice of zabbix.
+23:13:06.971 23:13:06.969 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:06 localhost systemd:Stopping User Slice of zabbix.
+23:13:06.971 23:13:06.969 sendMessageToConsole: 
+23:13:17.564 23:13:17.564 Message to master: anchor=/data: Created 144,000 of 3,600,000 files (4.00%)
+23:13:31.979 23:13:31.978 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:13:31.979 23:13:31.979 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:29 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:13:31.979 23:13:31.979 sendMessageToConsole: 
+23:14:01.986 23:14:01.986 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:58 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:58 localhost systemd:Removed slice User Slice of root.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:13:58 localhost systemd:Stopping User Slice of root.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Created slice User Slice of zabbix.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Starting User Slice of zabbix.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Started Session 1278 of user zabbix.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Starting Session 1278 of user zabbix.
+23:14:01.986 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Started Session 1277 of user zabbix.
+23:14:01.987 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Starting Session 1277 of user zabbix.
+23:14:01.987 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Started Session 1276 of user zabbix.
+23:14:01.987 23:14:01.986 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:01 localhost systemd:Starting Session 1276 of user zabbix.
+23:14:01.987 23:14:01.986 sendMessageToConsole: 
+23:14:06.992 23:14:06.991 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:14:06.992 23:14:06.992 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:06 localhost systemd:Removed slice User Slice of zabbix.
+23:14:06.992 23:14:06.992 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:06 localhost systemd:Stopping User Slice of zabbix.
+23:14:06.992 23:14:06.992 sendMessageToConsole: 
+23:14:31.999 23:14:31.999 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:14:31.999 23:14:31.999 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:29 localhost monit:'watchfrr' process is not running
+23:14:32.001 23:14:31.999 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:29 localhost monit:'watchfrr' trying to restart
+23:14:32.001 23:14:32.001 sendMessageToConsole: /var/log/messages: 2019-04-03 23:14:29 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:14:32.001 23:14:32.001 sendMessageToConsole: 
+23:15:02.009 23:15:02.008 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Created slice User Slice of zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting User Slice of zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1284 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1284 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Created slice User Slice of root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting User Slice of root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1281 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1281 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1280 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1280 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1279 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1279 of user root.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1283 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1283 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Started Session 1282 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:01 localhost systemd:Starting Session 1282 of user zabbix.
+23:15:02.009 23:15:02.008 sendMessageToConsole: 
+23:15:17.014 23:15:17.013 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:15:17.014 23:15:17.014 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:14 localhost systemd:Removed slice User Slice of zabbix.
+23:15:17.014 23:15:17.014 sendMessageToConsole: /var/log/messages: 2019-04-03 23:15:14 localhost systemd:Stopping User Slice of zabbix.
+23:15:17.014 23:15:17.014 sendMessageToConsole: 
+23:15:52.534 23:15:52.533 Message to master: anchor=/data: Created 180,000 of 3,600,000 files (5.00%)
+23:16:02.026 23:16:02.026 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Created slice User Slice of zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Starting User Slice of zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Started Session 1286 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Starting Session 1286 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Started Session 1285 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Starting Session 1285 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Started Session 1287 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost systemd:Starting Session 1287 of user zabbix.
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost monit:'watchfrr' process is not running
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost monit:'watchfrr' trying to restart
+23:16:02.026 23:16:02.026 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:01 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:16:02.026 23:16:02.026 sendMessageToConsole: 
+23:16:07.032 23:16:07.031 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:16:07.032 23:16:07.032 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:06 localhost systemd:Removed slice User Slice of zabbix.
+23:16:07.032 23:16:07.032 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:06 localhost systemd:Stopping User Slice of zabbix.
+23:16:07.032 23:16:07.032 sendMessageToConsole: 
+23:16:37.038 23:16:37.038 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:16:37.038 23:16:37.038 sendMessageToConsole: /var/log/messages: 2019-04-03 23:16:33 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:16:37.038 23:16:37.038 sendMessageToConsole: 
+23:17:02.045 23:17:02.044 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Created slice User Slice of zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Starting User Slice of zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Started Session 1288 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Starting Session 1288 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Started Session 1290 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Starting Session 1290 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Started Session 1289 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:01 localhost systemd:Starting Session 1289 of user zabbix.
+23:17:02.045 23:17:02.044 sendMessageToConsole: 
+23:17:07.050 23:17:07.050 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:17:07.050 23:17:07.050 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:06 localhost systemd:Removed slice User Slice of zabbix.
+23:17:07.050 23:17:07.050 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:06 localhost systemd:Stopping User Slice of zabbix.
+23:17:07.050 23:17:07.050 sendMessageToConsole: 
+23:17:37.059 23:17:37.059 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:17:37.059 23:17:37.059 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:33 localhost monit:'watchfrr' process is not running
+23:17:37.059 23:17:37.059 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:33 localhost monit:'watchfrr' trying to restart
+23:17:37.059 23:17:37.059 sendMessageToConsole: /var/log/messages: 2019-04-03 23:17:33 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:17:37.060 23:17:37.059 sendMessageToConsole: 
+23:18:02.065 23:18:02.065 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Created slice User Slice of zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Starting User Slice of zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Started Session 1291 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Starting Session 1291 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Started Session 1292 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Starting Session 1292 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Started Session 1293 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:01 localhost systemd:Starting Session 1293 of user zabbix.
+23:18:02.065 23:18:02.065 sendMessageToConsole: 
+23:18:07.070 23:18:07.070 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:18:07.070 23:18:07.070 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:05 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:18:07.070 23:18:07.070 sendMessageToConsole: 
+23:18:12.076 23:18:12.075 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:18:12.076 23:18:12.076 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:07 localhost systemd:Removed slice User Slice of zabbix.
+23:18:12.076 23:18:12.076 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:07 localhost systemd:Stopping User Slice of zabbix.
+23:18:12.076 23:18:12.076 sendMessageToConsole: 
+23:18:22.082 23:18:22.081 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:18:22.082 23:18:22.081 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:20 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:18:22.082 23:18:22.081 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:20 localhost systemd:Removed slice User Slice of root.
+23:18:22.082 23:18:22.081 sendMessageToConsole: /var/log/messages: 2019-04-03 23:18:20 localhost systemd:Stopping User Slice of root.
+23:18:22.082 23:18:22.081 sendMessageToConsole: 
+23:18:28.057 23:18:28.057 Message to master: anchor=/data: Created 216,000 of 3,600,000 files (6.00%)
+23:19:02.089 23:19:02.088 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Created slice User Slice of zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Starting User Slice of zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Started Session 1296 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Starting Session 1296 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Started Session 1294 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Starting Session 1294 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Started Session 1295 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:01 localhost systemd:Starting Session 1295 of user zabbix.
+23:19:02.089 23:19:02.088 sendMessageToConsole: 
+23:19:07.096 23:19:07.095 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:19:07.096 23:19:07.095 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:05 localhost monit:'watchfrr' process is not running
+23:19:07.096 23:19:07.095 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:05 localhost monit:'watchfrr' trying to restart
+23:19:07.096 23:19:07.095 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:05 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:19:07.096 23:19:07.095 sendMessageToConsole: 
+23:19:12.103 23:19:12.102 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:19:12.103 23:19:12.102 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:08 localhost systemd:Removed slice User Slice of zabbix.
+23:19:12.103 23:19:12.102 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:08 localhost systemd:Stopping User Slice of zabbix.
+23:19:12.103 23:19:12.102 sendMessageToConsole: 
+23:19:42.114 23:19:42.114 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:19:42.114 23:19:42.114 sendMessageToConsole: /var/log/messages: 2019-04-03 23:19:37 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:19:42.114 23:19:42.114 sendMessageToConsole: 
+23:20:02.120 23:20:02.119 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Created slice User Slice of root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting User Slice of root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1298 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1298 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1297 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1297 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Created slice User Slice of zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting User Slice of zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1302 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1302 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1300 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1300 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1303 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1303 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1299 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1299 of user root.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Started Session 1301 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:01 localhost systemd:Starting Session 1301 of user zabbix.
+23:20:02.120 23:20:02.119 sendMessageToConsole: 
+23:20:17.126 23:20:17.125 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:20:17.126 23:20:17.125 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:14 localhost systemd:Removed slice User Slice of zabbix.
+23:20:17.126 23:20:17.125 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:14 localhost systemd:Stopping User Slice of zabbix.
+23:20:17.126 23:20:17.126 sendMessageToConsole: 
+23:20:42.134 23:20:42.133 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:20:42.134 23:20:42.134 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:37 localhost monit:'watchfrr' process is not running
+23:20:42.134 23:20:42.134 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:37 localhost monit:'watchfrr' trying to restart
+23:20:42.134 23:20:42.134 sendMessageToConsole: /var/log/messages: 2019-04-03 23:20:37 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:20:42.134 23:20:42.134 sendMessageToConsole: 
+23:21:02.140 23:21:02.140 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Created slice User Slice of zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Starting User Slice of zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Started Session 1305 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Starting Session 1305 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Started Session 1306 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Starting Session 1306 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Started Session 1304 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:01 localhost systemd:Starting Session 1304 of user zabbix.
+23:21:02.140 23:21:02.140 sendMessageToConsole: 
+23:21:05.333 23:21:05.333 Message to master: anchor=/data: Created 252,000 of 3,600,000 files (7.00%)
+23:21:07.147 23:21:07.146 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:21:07.147 23:21:07.147 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:07 localhost systemd:Removed slice User Slice of zabbix.
+23:21:07.147 23:21:07.147 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:07 localhost systemd:Stopping User Slice of zabbix.
+23:21:07.147 23:21:07.147 sendMessageToConsole: 
+23:21:12.153 23:21:12.152 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:21:12.153 23:21:12.152 sendMessageToConsole: /var/log/messages: 2019-04-03 23:21:09 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:21:12.153 23:21:12.152 sendMessageToConsole: 
+23:22:02.159 23:22:02.159 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Created slice User Slice of zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Starting User Slice of zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Started Session 1307 of user zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Starting Session 1307 of user zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Started Session 1308 of user zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Starting Session 1308 of user zabbix.
+23:22:02.159 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Started Session 1309 of user zabbix.
+23:22:02.160 23:22:02.159 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:01 localhost systemd:Starting Session 1309 of user zabbix.
+23:22:02.160 23:22:02.159 sendMessageToConsole: 
+23:22:07.165 23:22:07.165 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:22:07.165 23:22:07.165 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:06 localhost systemd:Removed slice User Slice of zabbix.
+23:22:07.165 23:22:07.165 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:06 localhost systemd:Stopping User Slice of zabbix.
+23:22:07.165 23:22:07.165 sendMessageToConsole: 
+23:22:12.174 23:22:12.174 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:22:12.174 23:22:12.174 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:09 localhost monit:'watchfrr' process is not running
+23:22:12.174 23:22:12.174 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:09 localhost monit:'watchfrr' trying to restart
+23:22:12.174 23:22:12.174 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:09 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:22:12.174 23:22:12.174 sendMessageToConsole: 
+23:22:42.180 23:22:42.180 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:22:42.180 23:22:42.180 sendMessageToConsole: /var/log/messages: 2019-04-03 23:22:41 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:22:42.180 23:22:42.180 sendMessageToConsole: 
+23:23:02.190 23:23:02.189 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Created slice User Slice of zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Starting User Slice of zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Started Session 1310 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Starting Session 1310 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Started Session 1312 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Starting Session 1312 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Started Session 1311 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:01 localhost systemd:Starting Session 1311 of user zabbix.
+23:23:02.190 23:23:02.189 sendMessageToConsole: 
+23:23:07.197 23:23:07.197 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:23:07.197 23:23:07.197 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:03 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:23:07.197 23:23:07.197 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:03 localhost systemd:Removed slice User Slice of root.
+23:23:07.198 23:23:07.197 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:03 localhost systemd:Stopping User Slice of root.
+23:23:07.198 23:23:07.197 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:06 localhost systemd:Removed slice User Slice of zabbix.
+23:23:07.198 23:23:07.197 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:06 localhost systemd:Stopping User Slice of zabbix.
+23:23:07.198 23:23:07.197 sendMessageToConsole: 
+23:23:42.204 23:23:42.204 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:23:42.204 23:23:42.204 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:41 localhost monit:'watchfrr' process is not running
+23:23:42.205 23:23:42.204 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:41 localhost monit:'watchfrr' trying to restart
+23:23:42.205 23:23:42.204 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:41 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:23:42.205 23:23:42.204 sendMessageToConsole: 
+23:23:44.438 23:23:44.437 Message to master: anchor=/data: Created 288,000 of 3,600,000 files (8.00%)
+23:23:52.210 23:23:52.210 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:23:52.210 23:23:52.210 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:50 localhost systemd-logind:New session 1313 of user admin.
+23:23:52.211 23:23:52.210 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:50 localhost systemd:Started Session 1313 of user admin.
+23:23:52.211 23:23:52.210 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:50 localhost systemd:Starting Session 1313 of user admin.
+23:23:52.211 23:23:52.210 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:50 localhost dbus[1082]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+23:23:52.211 23:23:52.210 sendMessageToConsole: /var/log/messages: 2019-04-03 23:23:50 localhost dbus[1082]:[system] Successfully activated service 'org.freedesktop.problems'
+23:23:52.211 23:23:52.210 sendMessageToConsole: 
+23:24:02.218 23:24:02.216 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Created slice User Slice of zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Starting User Slice of zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Started Session 1315 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Starting Session 1315 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Started Session 1314 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Starting Session 1314 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Started Session 1316 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:01 localhost systemd:Starting Session 1316 of user zabbix.
+23:24:02.218 23:24:02.217 sendMessageToConsole: 
+23:24:07.223 23:24:07.223 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:24:07.223 23:24:07.223 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:06 localhost systemd:Removed slice User Slice of zabbix.
+23:24:07.223 23:24:07.223 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:06 localhost systemd:Stopping User Slice of zabbix.
+23:24:07.223 23:24:07.223 sendMessageToConsole: 
+23:24:12.229 23:24:12.229 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost systemd:Started Session 1317 of user admin.
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost systemd-logind:New session 1317 of user admin.
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost systemd:Starting Session 1317 of user admin.
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost dbus[1082]:[system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost systemd:Starting Fingerprint Authentication Daemon...
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost dbus[1082]:[system] Successfully activated service 'net.reactivated.Fprint'
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost systemd:Started Fingerprint Authentication Daemon.
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost fprintd:Launching FprintObject
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost journal:D-Bus service launched with name: net.reactivated.Fprint
+23:24:12.229 23:24:12.229 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:10 localhost journal:entering main loop
+23:24:12.229 23:24:12.229 sendMessageToConsole: 
+23:24:17.236 23:24:17.235 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:24:17.236 23:24:17.236 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:12 localhost su:(to root) admin on pts/4
+23:24:17.236 23:24:17.236 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:13 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:24:17.236 23:24:17.236 sendMessageToConsole: 
+23:24:42.243 23:24:42.242 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:24:42.243 23:24:42.242 sendMessageToConsole: /var/log/messages: 2019-04-03 23:24:41 localhost journal:No devices in use, exit
+23:24:42.243 23:24:42.242 sendMessageToConsole: 
+23:25:02.249 23:25:02.248 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Created slice User Slice of zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting User Slice of zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1318 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1318 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1322 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1322 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1321 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1321 of user zabbix.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Created slice User Slice of root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting User Slice of root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1323 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1323 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1319 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1319 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Started Session 1320 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:01 localhost systemd:Starting Session 1320 of user root.
+23:25:02.249 23:25:02.248 sendMessageToConsole: 
+23:25:17.254 23:25:17.254 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:25:17.254 23:25:17.254 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:13 localhost monit:'watchfrr' process is not running
+23:25:17.254 23:25:17.254 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:13 localhost monit:'watchfrr' trying to restart
+23:25:17.254 23:25:17.254 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:13 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:25:17.255 23:25:17.254 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:14 localhost systemd:Removed slice User Slice of zabbix.
+23:25:17.255 23:25:17.254 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:14 localhost systemd:Stopping User Slice of zabbix.
+23:25:17.255 23:25:17.254 sendMessageToConsole: 
+23:25:47.275 23:25:47.268 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:25:47.275 23:25:47.268 sendMessageToConsole: /var/log/messages: 2019-04-03 23:25:45 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:25:47.275 23:25:47.268 sendMessageToConsole: 
+23:26:02.274 23:26:02.273 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Created slice User Slice of zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Starting User Slice of zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Started Session 1324 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Starting Session 1324 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Started Session 1325 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Starting Session 1325 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Started Session 1326 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:01 localhost systemd:Starting Session 1326 of user zabbix.
+23:26:02.274 23:26:02.274 sendMessageToConsole: 
+23:26:12.279 23:26:12.279 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:26:12.279 23:26:12.279 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:07 localhost systemd:Removed slice User Slice of zabbix.
+23:26:12.279 23:26:12.279 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:07 localhost systemd:Stopping User Slice of zabbix.
+23:26:12.279 23:26:12.279 sendMessageToConsole: 
+23:26:22.643 23:26:22.643 Message to master: anchor=/data: Created 324,000 of 3,600,000 files (9.00%)
+23:26:47.289 23:26:47.289 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:26:47.289 23:26:47.289 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:45 localhost monit:'watchfrr' process is not running
+23:26:47.289 23:26:47.289 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:45 localhost monit:'watchfrr' trying to restart
+23:26:47.289 23:26:47.289 sendMessageToConsole: /var/log/messages: 2019-04-03 23:26:46 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:26:47.289 23:26:47.289 sendMessageToConsole: 
+23:27:02.295 23:27:02.295 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Created slice User Slice of zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Starting User Slice of zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Started Session 1327 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Starting Session 1327 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Started Session 1328 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Starting Session 1328 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Started Session 1329 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:01 localhost systemd:Starting Session 1329 of user zabbix.
+23:27:02.295 23:27:02.295 sendMessageToConsole: 
+23:27:07.301 23:27:07.300 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:27:07.301 23:27:07.301 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:06 localhost systemd:Removed slice User Slice of zabbix.
+23:27:07.301 23:27:07.301 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:06 localhost systemd:Stopping User Slice of zabbix.
+23:27:07.301 23:27:07.301 sendMessageToConsole: 
+23:27:22.307 23:27:22.306 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:27:22.307 23:27:22.307 sendMessageToConsole: /var/log/messages: 2019-04-03 23:27:17 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:27:22.307 23:27:22.307 sendMessageToConsole: 
+23:28:02.315 23:28:02.315 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Created slice User Slice of zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Starting User Slice of zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Started Session 1331 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Starting Session 1331 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Started Session 1332 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Starting Session 1332 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Started Session 1330 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:01 localhost systemd:Starting Session 1330 of user zabbix.
+23:28:02.316 23:28:02.315 sendMessageToConsole: 
+23:28:07.321 23:28:07.320 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:28:07.321 23:28:07.320 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:07 localhost systemd:Removed slice User Slice of zabbix.
+23:28:07.321 23:28:07.320 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:07 localhost systemd:Stopping User Slice of zabbix.
+23:28:07.321 23:28:07.320 sendMessageToConsole: 
+23:28:22.329 23:28:22.328 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:28:22.329 23:28:22.329 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:18 localhost monit:'watchfrr' process is not running
+23:28:22.329 23:28:22.329 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:18 localhost monit:'watchfrr' trying to restart
+23:28:22.329 23:28:22.329 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:18 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:28:22.329 23:28:22.329 sendMessageToConsole: 
+23:28:52.335 23:28:52.335 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:28:52.335 23:28:52.335 sendMessageToConsole: /var/log/messages: 2019-04-03 23:28:49 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:28:52.335 23:28:52.335 sendMessageToConsole: 
+23:29:01.968 23:29:01.967 Message to master: anchor=/data: Created 360,000 of 3,600,000 files (10.00%)
+23:29:02.342 23:29:02.341 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Created slice User Slice of zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Starting User Slice of zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Started Session 1334 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Starting Session 1334 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Started Session 1335 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Starting Session 1335 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Started Session 1333 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:01 localhost systemd:Starting Session 1333 of user zabbix.
+23:29:02.342 23:29:02.341 sendMessageToConsole: 
+23:29:07.363 23:29:07.363 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:29:07.363 23:29:07.363 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:06 localhost systemd:Removed slice User Slice of zabbix.
+23:29:07.363 23:29:07.363 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:06 localhost systemd:Stopping User Slice of zabbix.
+23:29:07.363 23:29:07.363 sendMessageToConsole: 
+23:29:52.370 23:29:52.369 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:29:52.370 23:29:52.369 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:50 localhost monit:'watchfrr' process is not running
+23:29:52.370 23:29:52.369 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:50 localhost monit:'watchfrr' trying to restart
+23:29:52.370 23:29:52.369 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:50 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:29:52.370 23:29:52.369 sendMessageToConsole: 
+23:30:02.376 23:30:02.375 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:57 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:57 localhost systemd:Removed slice User Slice of root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:29:57 localhost systemd:Stopping User Slice of root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Created slice User Slice of zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting User Slice of zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1342 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1342 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1341 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1341 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Created slice User Slice of root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting User Slice of root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1336 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1336 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1337 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1337 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1340 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1340 of user zabbix.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1339 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1339 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Started Session 1338 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:01 localhost systemd:Starting Session 1338 of user root.
+23:30:02.376 23:30:02.375 sendMessageToConsole: 
+23:30:12.381 23:30:12.381 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:30:12.382 23:30:12.381 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:08 localhost systemd:Removed slice User Slice of zabbix.
+23:30:12.382 23:30:12.381 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:08 localhost systemd:Stopping User Slice of zabbix.
+23:30:12.382 23:30:12.381 sendMessageToConsole: 
+23:30:22.387 23:30:22.387 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:30:22.387 23:30:22.387 sendMessageToConsole: /var/log/messages: 2019-04-03 23:30:22 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:30:22.387 23:30:22.387 sendMessageToConsole: 
+23:31:02.394 23:31:02.393 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Created slice User Slice of zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Starting User Slice of zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Started Session 1343 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Starting Session 1343 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Started Session 1344 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Starting Session 1344 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Started Session 1345 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:01 localhost systemd:Starting Session 1345 of user zabbix.
+23:31:02.394 23:31:02.393 sendMessageToConsole: 
+23:31:07.399 23:31:07.399 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:31:07.399 23:31:07.399 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:06 localhost systemd:Removed slice User Slice of zabbix.
+23:31:07.399 23:31:07.399 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:06 localhost systemd:Stopping User Slice of zabbix.
+23:31:07.399 23:31:07.399 sendMessageToConsole: 
+23:31:22.405 23:31:22.405 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:31:22.405 23:31:22.405 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:22 localhost monit:'watchfrr' process is not running
+23:31:22.405 23:31:22.405 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:22 localhost monit:'watchfrr' trying to restart
+23:31:22.405 23:31:22.405 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:22 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:31:22.405 23:31:22.405 sendMessageToConsole: 
+23:31:32.410 23:31:32.410 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:31:32.410 23:31:32.410 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:27 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:31:32.410 23:31:32.410 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:28 localhost systemd:Removed slice User Slice of root.
+23:31:32.410 23:31:32.410 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:28 localhost systemd:Stopping User Slice of root.
+23:31:32.410 23:31:32.410 sendMessageToConsole: 
+23:31:42.822 23:31:42.821 Message to master: anchor=/data: Created 396,000 of 3,600,000 files (11.00%)
+23:31:57.416 23:31:57.416 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:31:57.416 23:31:57.416 sendMessageToConsole: /var/log/messages: 2019-04-03 23:31:54 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:31:57.416 23:31:57.416 sendMessageToConsole: 
+23:32:02.422 23:32:02.422 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Created slice User Slice of zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Starting User Slice of zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Started Session 1347 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Starting Session 1347 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Started Session 1346 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Starting Session 1346 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Started Session 1348 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:01 localhost systemd:Starting Session 1348 of user zabbix.
+23:32:02.422 23:32:02.422 sendMessageToConsole: 
+23:32:07.429 23:32:07.429 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:32:07.429 23:32:07.429 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:06 localhost systemd:Removed slice User Slice of zabbix.
+23:32:07.429 23:32:07.429 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:06 localhost systemd:Stopping User Slice of zabbix.
+23:32:07.429 23:32:07.429 sendMessageToConsole: 
+23:32:57.438 23:32:57.436 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:32:57.438 23:32:57.437 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:54 localhost monit:'watchfrr' process is not running
+23:32:57.438 23:32:57.437 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:54 localhost monit:'watchfrr' trying to restart
+23:32:57.438 23:32:57.437 sendMessageToConsole: /var/log/messages: 2019-04-03 23:32:54 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:32:57.438 23:32:57.437 sendMessageToConsole: 
+23:33:02.445 23:33:02.443 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Created slice User Slice of zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Starting User Slice of zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Started Session 1349 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Starting Session 1349 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Started Session 1351 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Starting Session 1351 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Started Session 1350 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:01 localhost systemd:Starting Session 1350 of user zabbix.
+23:33:02.445 23:33:02.444 sendMessageToConsole: 
+23:33:07.453 23:33:07.450 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:33:07.453 23:33:07.450 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:06 localhost systemd:Removed slice User Slice of zabbix.
+23:33:07.453 23:33:07.450 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:06 localhost systemd:Stopping User Slice of zabbix.
+23:33:07.453 23:33:07.450 sendMessageToConsole: 
+23:33:27.457 23:33:27.456 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:33:27.457 23:33:27.457 sendMessageToConsole: /var/log/messages: 2019-04-03 23:33:26 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:33:27.457 23:33:27.457 sendMessageToConsole: 
+23:34:02.463 23:34:02.463 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Created slice User Slice of zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Starting User Slice of zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Started Session 1352 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Starting Session 1352 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Started Session 1354 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Starting Session 1354 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Started Session 1353 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:01 localhost systemd:Starting Session 1353 of user zabbix.
+23:34:02.463 23:34:02.463 sendMessageToConsole: 
+23:34:07.472 23:34:07.472 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:34:07.472 23:34:07.472 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:07 localhost systemd:Removed slice User Slice of zabbix.
+23:34:07.472 23:34:07.472 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:07 localhost systemd:Stopping User Slice of zabbix.
+23:34:07.472 23:34:07.472 sendMessageToConsole: 
+23:34:21.595 23:34:21.595 Message to master: anchor=/data: Created 432,000 of 3,600,000 files (12.00%)
+23:34:27.479 23:34:27.478 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:34:27.479 23:34:27.479 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:26 localhost monit:'watchfrr' process is not running
+23:34:27.479 23:34:27.479 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:26 localhost monit:'watchfrr' trying to restart
+23:34:27.479 23:34:27.479 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:26 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:34:27.479 23:34:27.479 sendMessageToConsole: 
+23:35:02.486 23:35:02.485 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:34:58 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Created slice User Slice of zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting User Slice of zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1358 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1358 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1360 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1360 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Created slice User Slice of root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting User Slice of root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1357 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1357 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1356 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1356 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1359 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1359 of user zabbix.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Started Session 1355 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:01 localhost systemd:Starting Session 1355 of user root.
+23:35:02.486 23:35:02.485 sendMessageToConsole: 
+23:35:07.491 23:35:07.491 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:35:07.491 23:35:07.491 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:06 localhost systemd:Removed slice User Slice of zabbix.
+23:35:07.491 23:35:07.491 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:06 localhost systemd:Stopping User Slice of zabbix.
+23:35:07.491 23:35:07.491 sendMessageToConsole: 
+23:35:27.497 23:35:27.497 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:35:27.497 23:35:27.497 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:24 localhost automount[2178]:add_host_addrs: hostname lookup failed: Name or service not known
+23:35:27.497 23:35:27.497 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:24 localhost systemd:Removed slice User Slice of root.
+23:35:27.497 23:35:27.497 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:24 localhost systemd:Stopping User Slice of root.
+23:35:27.497 23:35:27.497 sendMessageToConsole: 
+23:36:02.504 23:36:02.503 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:58 localhost monit:'watchfrr' process is not running
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:58 localhost monit:'watchfrr' trying to restart
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:35:58 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Created slice User Slice of zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Starting User Slice of zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Started Session 1361 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Starting Session 1361 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Started Session 1362 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Starting Session 1362 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Started Session 1363 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:01 localhost systemd:Starting Session 1363 of user zabbix.
+23:36:02.504 23:36:02.504 sendMessageToConsole: 
+23:36:07.510 23:36:07.509 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+23:36:07.510 23:36:07.509 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:06 localhost systemd:Removed slice User Slice of zabbix.
+23:36:07.510 23:36:07.509 sendMessageToConsole: /var/log/messages: 2019-04-03 23:36:06 localhost systemd:Stopping User Slice of zabbix.
+23:36:07.510 23:36:07.509 sendMessageToConsole: 
