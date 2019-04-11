@@ -1,0 +1,177 @@
+<title>Vdbench test_read_raid0_1m32t_20190411/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+16:13:30.069 input argument scanned: '-ffs_write_4k_128.txt'
+16:13:30.070 input argument scanned: '-otest_read_raid0_1m32t_20190411'
+16:13:30.070 java.vendor                   Oracle Corporation
+16:13:30.070 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre
+16:13:30.070 java.vm.specification.version 1.8
+16:13:30.070 java.vm.version               25.161-b14
+16:13:30.070 java.vm.vendor                Oracle Corporation
+16:13:30.070 java.specification.version    1.8
+16:13:30.070 java.class.version            52.0
+16:13:30.070 user.name                     root
+16:13:30.070 user.dir                      /root/vdbench50407
+16:13:30.070 java.io.tmpdir                /tmp
+16:13:30.070 java.class.path               ./:./classes:./vdbench.jar
+16:13:30.070 os.name                       Linux
+16:13:30.070 os.arch                       amd64
+16:13:30.070 os.version                    3.10.0-862.el7.x86_64
+16:13:30.070 sun.arch.data.model           64
+16:13:30.073 Flushing all reports
+16:13:30.110 Creating anchor for /data,fsd=fsd1
+16:13:30.155 Anchor size: anchor=/data: dirs:           30; files:       90,000; bytes:   274.026g (294,232,912,786)
+16:13:30.243 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-190411-16.13.30.025 -l localhost-0 -p 5570   
+16:13:30.495 Slave localhost-0 (pid  32177) connected to master 32119
+16:13:30.523 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_1174290147">rd1 For loops: None</A>
+
+16:13:30.719 Flushing all reports
+16:13:30.720 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/data threads=32 skew= 0.00 operation=read 
+16:13:30.744 Waiting for synchronization of all slaves
+16:13:31.945 Synchronization of all slaves complete
+
+<a name="_1174290147"></a><i><b>16:13:32.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+Apr 11, 2019 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ....open.... ...close....
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp
+16:13:33.321            1  25274  0.866  33.9 24.6 100.0  25274  0.866    0.0  0.000 20732  0.00  20732  860157  6635  0.224  6605  0.028
+16:13:34.178            2  29245  0.966  97.2 89.5 100.0  29245  0.966    0.0  0.000 23908  0.00  23908  857224  7735  0.050  7733  0.006
+16:13:35.057            3  29432  0.759  93.1 90.7 100.0  29432  0.759    0.0  0.000 24146  0.00  24146  860277  7719  0.172  7723  0.140
+16:13:36.012            4  30524  0.670  97.6 95.6 100.0  30524  0.670    0.0  0.000 25032  0.00  25032  859915  8024  0.067  8021  0.122
+16:13:37.016            5  32478  0.971  99.8 97.5 100.0  32478  0.971    0.0  0.000 26679  0.00  26679  861379  8505  0.018  8505  0.005
+16:13:38.017            6  32973  0.950  99.7 98.6 100.0  32973  0.950    0.0  0.000 26999  0.00  26999  858614  8656  0.022  8658  0.005
+16:13:39.036            7  35074  0.868  99.8 98.6 100.0  35074  0.868    0.0  0.000 28729  0.00  28729  858905  9238  0.046  9238  0.022
+16:13:40.115            8  34391  0.869  97.6 96.2 100.0  34391  0.869    0.0  0.000 28167  0.00  28167  858811  9071  0.046  9071  0.021
+16:13:41.027            9  28826  0.832  93.1 91.2 100.0  28826  0.832    0.0  0.000 23667  0.00  23667  860931  7537  0.101  7536  0.011
+16:13:42.027           10  30959  1.027  99.3 98.0 100.0  30959  1.027    0.0  0.000 25327  0.00  25327  857834  8183  0.045  8185  0.005
+16:13:43.151           11  37507  0.920  99.7 98.2 100.0  37507  0.920    0.0  0.000 30667  0.00  30667  857375  9913  0.044  9912  0.008
+16:13:44.039           12  25978  1.093  95.8 94.4 100.0  25978  1.093    0.0  0.000 21297  0.00  21297  859665  6792  0.023  6791  0.005
+16:13:45.025           13  30716  0.887  96.9 95.7 100.0  30716  0.887    0.0  0.000 25163  0.00  25163  859020  8053  0.058  8055  0.058
+16:13:46.032           14  30017  0.728  97.1 95.6 100.0  30017  0.728    0.0  0.000 24595  0.00  24595  859171  7894  0.114  7893  0.083
+16:13:47.160           15  31851  0.878  96.6 94.6 100.0  31851  0.878    0.0  0.000 26082  0.00  26082  858682  8387  0.070  8388  0.039
+16:13:48.969           16  40750  0.982  99.3 98.0 100.0  40750  0.982    0.0  0.000 33393  0.00  33393  859268 10685  0.022 10684  0.005
+16:13:49.025 Reporting delay:    16 (  1) (  1) 16:13:48.000   0.001   0.779   0.779   1.025   0.246
+16:13:49.078           17  26806  0.901  99.5 97.8 100.0  26806  0.901    0.0  0.000 21986  0.00  21986  860048  7014  0.024  7014  0.005
+16:13:50.015           18  29399  1.035  99.2 96.8 100.0  29399  1.035    0.0  0.000 24085  0.00  24085  859076  7684  0.025  7685  0.005
+16:13:51.019           19  33204  0.968  99.6 97.8 100.0  33204  0.968    0.0  0.000 27187  0.00  27187  858571  8729  0.028  8731  0.005
+16:13:52.020           20  31543  0.896  98.8 96.1 100.0  31543  0.896    0.0  0.000 25850  0.00  25850  859324  8272  0.043  8271  0.036
+16:13:53.012           21  32403  0.951  99.3 97.0 100.0  32403  0.951    0.0  0.000 26537  0.00  26537  858768  8531  0.031  8529  0.005
+16:13:54.016           22  33614  0.954  98.8 97.7 100.0  33614  0.954    0.0  0.000 27567  0.00  27567  859959  8833  0.019  8835  0.005
+16:13:55.141           23  37407  0.937  99.3 98.3 100.0  37407  0.937    0.0  0.000 30626  0.00  30626  858504  9868  0.042  9867  0.005
+16:13:56.009           24  29207  0.913  99.3 98.3 100.0  29207  0.913    0.0  0.000 23930  0.00  23930  859153  7615  0.070  7615  0.005
+16:13:57.007           25  31758  0.996  99.2 98.2 100.0  31758  0.996    0.0  0.000 26005  0.00  26005  858642  8372  0.019  8371  0.005
+16:13:58.016           26  31158  0.956  95.2 93.9 100.0  31158  0.956    0.0  0.000 25528  0.00  25528  859110  8203  0.088  8203  0.016
+16:13:59.014           27  31785  0.993  99.8 98.7 100.0  31785  0.993    0.0  0.000 26082  0.00  26082  860450  8329  0.019  8331  0.005
+16:14:00.015           28  32597  0.973  99.6 98.7 100.0  32597  0.973    0.0  0.000 26670  0.00  26670  857943  8633  0.028  8633  0.004
+16:14:01.007           29  31319  0.986  99.7 98.7 100.0  31319  0.986    0.0  0.000 25658  0.00  25658  859050  8272  0.135  8272  0.005
+16:14:02.009           30  30041  1.046  98.9 97.8 100.0  30041  1.046    0.0  0.000 24661  0.00  24661  860799  7854  0.020  7853  0.006
+Apr 11, 2019 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ....open.... ...close....
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp
+16:14:03.016           31  29940  1.017  99.2 97.9 100.0  29940  1.017    0.0  0.000 24536  0.00  24536  859347  7870  0.048  7870  0.005
+16:14:04.013           32  29300  1.097  97.0 95.5 100.0  29300  1.097    0.0  0.000 24009  0.00  24009  859257  7721  0.048  7722  0.017
+16:14:05.020           33  31585  1.000  98.4 96.8 100.0  31585  1.000    0.0  0.000 25848  0.00  25848  858138  8369  0.020  8368  0.005
+16:14:05.864 
+16:14:05.865 Message from slave localhost-0: 
+16:14:05.865 New messages found on /var/adm/messages. Do they belong to you?
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:01 localhost systemd:Created slice User Slice of zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:01 localhost systemd:Starting User Slice of zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Started Session 337 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Starting Session 337 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Started Session 338 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Starting Session 338 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Started Session 336 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:02 localhost systemd:Starting Session 336 of user zabbix.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:04 localhost systemd:Started Session 339 of user admin.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:04 localhost systemd:Starting Session 339 of user admin.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:04 localhost systemd-logind:New session 339 of user admin.
+16:14:05.865 /var/log/messages: 2019-04-11 16:14:05 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+16:14:05.865 
+16:14:06.012           34  31871  0.966  99.0 97.5 100.0  31871  0.966    0.0  0.000 26119  0.00  26119  859355  8388  0.020  8389  0.005
+16:14:07.011           35  32493  0.961  99.0 97.2 100.0  32493  0.961    0.0  0.000 26616  0.00  26616  858939  8596  0.020  8596  0.005
+16:14:08.016           36  30018  1.069  97.0 95.9 100.0  30018  1.069    0.0  0.000 24623  0.00  24623  860134  7834  0.028  7833  0.005
+16:14:09.009           37  29397  1.045  99.5 97.8 100.0  29397  1.045    0.0  0.000 24119  0.00  24119  860332  7704  0.029  7704  0.005
+16:14:10.010           38  26924  1.203  98.9 97.4 100.0  26924  1.203    0.0  0.000 22084  0.00  22084  860113  7055  0.039  7057  0.005
+16:14:10.871 
+16:14:10.872 Message from slave localhost-0: 
+16:14:10.872 New messages found on /var/adm/messages. Do they belong to you?
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:06 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:06 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:07 localhost dbus[1131]:[system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:07 localhost systemd:Starting Fingerprint Authentication Daemon...
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:08 localhost dbus[1131]:[system] Successfully activated service 'net.reactivated.Fprint'
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:08 localhost systemd:Started Fingerprint Authentication Daemon.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:08 localhost fprintd:Launching FprintObject
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:08 localhost journal:D-Bus service launched with name: net.reactivated.Fprint
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:08 localhost journal:entering main loop
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:09 localhost systemd:Removed slice User Slice of zabbix.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:09 localhost systemd:Stopping User Slice of zabbix.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:09 localhost automount[1827]:add_host_addrs: hostname lookup failed: Name or service not known
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:10 localhost systemd-logind:Removed session 339.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:10 localhost systemd:Removed slice User Slice of root.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:10 localhost systemd:Stopping User Slice of root.
+16:14:10.872 /var/log/messages: 2019-04-11 16:14:10 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+16:14:10.872 
+16:14:11.019           39  30514  1.028  96.7 95.1 100.0  30514  1.028    0.0  0.000 24958  0.00  24958  857681  8083  0.032  8081  0.015
+16:14:12.015           40  29160  1.082  99.5 98.6 100.0  29160  1.082    0.0  0.000 23943  0.00  23943  860984  7598  0.018  7598  0.004
+16:14:13.018           41  29896  1.034  99.4 98.3 100.0  29896  1.034    0.0  0.000 24498  0.00  24498  859253  7847  0.020  7848  0.005
+16:14:14.013           42  28709  1.112  99.7 98.7 100.0  28709  1.112    0.0  0.000 23529  0.00  23529  859398  7520  0.018  7519  0.005
+16:14:15.012           43  29947  1.036  99.8 98.8 100.0  29947  1.036    0.0  0.000 24525  0.00  24525  858752  7879  0.099  7879  0.004
+16:14:15.878 
+16:14:15.878 Message from slave localhost-0: 
+16:14:15.878 New messages found on /var/adm/messages. Do they belong to you?
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:12 localhost systemd:Started Session 340 of user admin.
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:12 localhost systemd:Starting Session 340 of user admin.
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:12 localhost systemd-logind:New session 340 of user admin.
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:13 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:15 localhost monit:'watchfrr' process is not running
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:15 localhost monit:'watchfrr' trying to restart
+16:14:15.878 /var/log/messages: 2019-04-11 16:14:15 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+16:14:15.878 
+16:14:16.024           44  31864  0.993  98.4 97.1 100.0  31864  0.993    0.0  0.000 26114  0.00  26114  859381  8337  0.039  8338  0.006
+16:14:17.017           45  29063  1.054  98.2 96.1 100.0  29063  1.054    0.0  0.000 23744  0.00  23744  856681  7771  0.078  7772  0.006
+16:14:18.015           46  31336  0.993  99.3 97.4 100.0  31336  0.993    0.0  0.000 25673  0.00  25673  859098  8293  0.076  8291  0.006
+16:14:19.010           47  30105  1.052  99.4 97.6 100.0  30105  1.052    0.0  0.000 24680  0.00  24680  859644  7916  0.019  7916  0.005
+16:14:20.008           48  31557  0.997  99.5 98.7 100.0  31557  0.997    0.0  0.000 25834  0.00  25834  858426  8338  0.018  8339  0.004
+16:14:20.885 
+16:14:20.885 Message from slave localhost-0: 
+16:14:20.885 New messages found on /var/adm/messages. Do they belong to you?
+16:14:20.885 /var/log/messages: 2019-04-11 16:14:18 localhost su:(to root) admin on pts/2
+16:14:20.885 
+16:14:21.010           49  29789  1.028  99.7 98.7 100.0  29789  1.028    0.0  0.000 24398  0.00  24398  858835  7871  0.077  7870  0.004
+16:14:22.021           50  29731  1.109  98.8 97.6 100.0  29731  1.109    0.0  0.000 24361  0.00  24361  859208  7792  0.020  7793  0.005
+16:14:23.007           51  31100  0.985  98.8 97.6 100.0  31100  0.985    0.0  0.000 25470  0.00  25470  858766  8106  0.021  8105  0.005
+16:14:24.005           52  30271  1.042  99.5 98.5 100.0  30271  1.042    0.0  0.000 24828  0.00  24828  860040  7959  0.058  7959  0.005
+16:14:25.012           53  29658  1.046  99.6 98.7 100.0  29658  1.046    0.0  0.000 24286  0.00  24286  858678  7827  0.061  7829  0.004
+16:14:26.148           54  30596  1.039  99.3 98.3 100.0  30596  1.039    0.0  0.000 25049  0.00  25049  858474  8079  0.058  8077  0.005
+16:14:27.009           55  30298  1.029  99.5 98.5 100.0  30298  1.029    0.0  0.000 24833  0.00  24833  859467  7980  0.028  7980  0.005
+16:14:28.010           56  30754  1.027  97.5 96.4 100.0  30754  1.027    0.0  0.000 25224  0.00  25224  860045  8050  0.029  8051  0.010
+16:14:29.010           57  30795  1.021  99.5 98.7 100.0  30795  1.021    0.0  0.000 25191  0.00  25191  857792  8169  0.021  8168  0.004
+16:14:30.013           58  28642  1.077  99.9 97.8 100.0  28642  1.077    0.0  0.000 23444  0.00  23444  858306  7510  0.076  7512  0.005
+16:14:31.092           59  30056  1.054  99.7 98.9 100.0  30056  1.054    0.0  0.000 24587  0.00  24587  857795  7934  0.019  7932  0.004
+16:14:32.014           60  30679  1.006  99.5 98.5 100.0  30679  1.006    0.0  0.000 25139  0.00  25139  859225  8040  0.067  8041  0.005
+16:14:32.104     avg_2-60  31000  0.983  98.6 97.1 100.0  31000  0.983    0.0  0.000 25398  0.00  25398  859103  8153  0.045  8153  0.014
+16:14:32.104     std_2-60 2454.3  6.345                  2454.3  6.345                                          655.0  1.447 654.9  0.906
+16:14:32.105     max_2-60  40750 404.25                   40750 404.25                                          10685 164.27 10684 167.24
+16:14:32.743 *
+16:14:32.744 ********************************************************************
+16:14:32.744 * Warning for host=localhost: average processor utilization 98.6%  *
+16:14:32.744 * Any processor utilization over 80% could mean that your system   *
+16:14:32.744 * does not have enough cycles to run the highest rate possible.    *
+16:14:32.744 ********************************************************************
+16:14:32.744 *
+16:14:32.962 
+16:14:32.962 Miscellaneous statistics:
+16:14:32.962 (These statistics do not include activity between the last reported interval and shutdown.)
+16:14:32.962 READ_OPENS          Files opened for read activity:             487,679      8,127/sec
+16:14:32.962 FILE_BUSY           File busy:                                      179          2/sec
+16:14:32.962 FILE_CLOSES         Close requests:                             487,647      8,127/sec
+16:14:32.962 
+16:14:32.962 Flushing all reports
+16:14:32.973 Java Heap in MB. max:  455.500; current:  109.500; used:   67.931; free:   41.569
+16:14:33.016 Ending Reporter
+16:14:33.940 Vdbench execution completed successfully. Output directory: /root/vdbench50407/test_read_raid0_1m32t_20190411 
+
+16:14:35.043 Java Heap in MB. max:  455.500; current:  109.500; used:   17.618; free:   91.882

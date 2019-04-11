@@ -2,3 +2,506 @@
 This file will contain the last 'nn' lines of files 
 /var/adm/messages and /var/adm/messages.0 on the target host. 
  
+Last 500 lines of /var/log/messages.1 and /var/log/messages
+command used: cat  /var/log/messages | tail -500
+
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1163] device (virbr0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1166] device (virbr0): state change: prepare -> config (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1178] keyfile: add connection in-memory (759637a7-2a48-4d5d-83b2-a81c88f4afd9,"virbr0-nic")
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1187] device (virbr0-nic): Activation: starting connection 'virbr0-nic' (759637a7-2a48-4d5d-83b2-a81c88f4afd9)
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1188] device (virbr0): state change: config -> ip-config (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1189] device (virbr0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1194] device (virbr0-nic): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1198] device (virbr0-nic): state change: prepare -> config (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1198] device (virbr0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1200] device (virbr0-nic): state change: config -> ip-config (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1201] device (virbr0): bridge port virbr0-nic was attached
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1201] device (virbr0-nic): Activation: connection 'virbr0-nic' enslaved, continuing activation
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1202] device (virbr0-nic): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1203] device (virbr0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1217] device (virbr0): Activation: successful, device activated.
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1225] device (virbr0-nic): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1227] device (virbr0-nic): state change: secondaries -> activated (reason 'none', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost nm-dispatcher:req:10 'up' [virbr0]: new request (4 scripts)
+2019-04-11 14:46:42 localhost nm-dispatcher:req:10 'up' [virbr0]: start running ordered scripts...
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1238] device (virbr0-nic): Activation: successful, device activated.
+2019-04-11 14:46:42 localhost nm-dispatcher:req:11 'up' [virbr0-nic]: new request (4 scripts)
+2019-04-11 14:46:42 localhost systemd:Unit iscsi.service cannot be reloaded because it is inactive.
+2019-04-11 14:46:42 localhost nm-dispatcher:req:11 'up' [virbr0-nic]: start running ordered scripts...
+2019-04-11 14:46:42 localhost dnsmasq[2522]:started, version 2.76 cachesize 150
+2019-04-11 14:46:42 localhost dnsmasq[2522]:compile time options: IPv6 GNU-getopt DBus no-i18n IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth no-DNSSEC loop-detect inotify
+2019-04-11 14:46:42 localhost dnsmasq-dhcp[2522]:DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease time 1h
+2019-04-11 14:46:42 localhost dnsmasq-dhcp[2522]:DHCP, sockets bound exclusively to interface virbr0
+2019-04-11 14:46:42 localhost dnsmasq[2522]:reading /etc/resolv.conf
+2019-04-11 14:46:42 localhost dnsmasq[2522]:using nameserver 10.233.233.184#53
+2019-04-11 14:46:42 localhost dnsmasq[2522]:using nameserver 10.233.233.67#53
+2019-04-11 14:46:42 localhost dnsmasq[2522]:bad address at /etc/hosts line 3
+2019-04-11 14:46:42 localhost dnsmasq[2522]:read /etc/hosts - 2 addresses
+2019-04-11 14:46:42 localhost dnsmasq[2522]:read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 addresses
+2019-04-11 14:46:42 localhost dnsmasq-dhcp[2522]:read /var/lib/libvirt/dnsmasq/default.hostsfile
+2019-04-11 14:46:42 localhost kernel:virbr0: port 1(virbr0-nic) entered disabled state
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1918] device (virbr0-nic): state change: activated -> unmanaged (reason 'connection-assumed', sys-iface-state: 'external')
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1921] device (virbr0): bridge port virbr0-nic was detached
+2019-04-11 14:46:42 localhost NetworkManager[1179]:<info>  [1554968802.1922] device (virbr0-nic): released from master device virbr0
+2019-04-11 14:46:42 localhost nm-dispatcher:req:12 'down' [virbr0-nic]: new request (4 scripts)
+2019-04-11 14:46:42 localhost systemd:Unit iscsi.service cannot be reloaded because it is inactive.
+2019-04-11 14:46:42 localhost nm-dispatcher:req:12 'down' [virbr0-nic]: start running ordered scripts...
+2019-04-11 14:46:42 localhost kdumpctl:kexec: loaded kdump kernel
+2019-04-11 14:46:42 localhost kdumpctl:Starting kdump: [OK]
+2019-04-11 14:46:42 localhost systemd:Started Crash recovery kernel arming.
+2019-04-11 14:46:42 localhost systemd:Started Varnish Cache, a high-performance HTTP accelerator.
+2019-04-11 14:46:42 localhost systemd:Starting Varnish Cache HTTP accelerator NCSA logging daemon...
+2019-04-11 14:46:42 localhost systemd:Started Varnish Cache HTTP accelerator NCSA logging daemon.
+2019-04-11 14:46:42 localhost systemd:Reached target Multi-User System.
+2019-04-11 14:46:42 localhost systemd:Starting Multi-User System.
+2019-04-11 14:46:42 localhost systemd:Reached target Graphical Interface.
+2019-04-11 14:46:42 localhost systemd:Starting Graphical Interface.
+2019-04-11 14:46:42 localhost systemd:Starting Update UTMP about System Runlevel Changes...
+2019-04-11 14:46:42 localhost systemd:Started Update UTMP about System Runlevel Changes.
+2019-04-11 14:46:42 localhost systemd:Startup finished in 2.611s (kernel) + 1.569s (initrd) + 7.216s (userspace) = 11.396s.
+2019-04-11 14:46:43 localhost systemd:Created slice User Slice of gdm.
+2019-04-11 14:46:43 localhost systemd:Starting User Slice of gdm.
+2019-04-11 14:46:43 localhost systemd-logind:New session c1 of user gdm.
+2019-04-11 14:46:43 localhost systemd:Started Session c1 of user gdm.
+2019-04-11 14:46:43 localhost systemd:Starting Session c1 of user gdm.
+2019-04-11 14:46:43 localhost ntpd[1160]:Listen normally on 4 eth0 10.233.233.124 UDP 123
+2019-04-11 14:46:43 localhost ntpd[1160]:Listen normally on 5 bond0 192.168.133.47 UDP 123
+2019-04-11 14:46:43 localhost ntpd[1160]:Listen normally on 6 virbr0 192.168.122.1 UDP 123
+2019-04-11 14:46:43 localhost ntpd[1160]:Listen normally on 7 bond0 fe80::f816:3eff:fef1:e233 UDP 123
+2019-04-11 14:46:43 localhost ntpd[1160]:Listen normally on 8 eth0 fe80::f816:3eff:fe79:9e62 UDP 123
+2019-04-11 14:46:44 localhost org.a11y.Bus:Activating service name='org.a11y.atspi.Registry'
+2019-04-11 14:46:44 localhost org.a11y.Bus:Successfully activated service 'org.a11y.atspi.Registry'
+2019-04-11 14:46:44 localhost org.a11y.atspi.Registry:SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+2019-04-11 14:46:44 localhost gnome-session:generating cookie with syscall
+2019-04-11 14:46:44 localhost gnome-session:generating cookie with syscall
+2019-04-11 14:46:44 localhost gnome-session:generating cookie with syscall
+2019-04-11 14:46:44 localhost gnome-session:generating cookie with syscall
+2019-04-11 14:46:44 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'
+2019-04-11 14:46:44 localhost systemd:Starting Daemon for power management...
+2019-04-11 14:46:44 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.UPower'
+2019-04-11 14:46:44 localhost systemd:Started Daemon for power management.
+2019-04-11 14:46:44 localhost rtkit-daemon[1119]:Successfully made thread 12720 of process 12720 (/usr/bin/pulseaudio) owned by '42' high priority at nice level -11.
+2019-04-11 14:46:45 localhost journal:JS WARNING: [resource:///org/gnome/shell/ui/main.js 315]: reference to undefined property "MetaStage"
+2019-04-11 14:46:45 localhost journal:JS WARNING: [resource:///org/gnome/shell/ui/layout.js 221]: reference to undefined property "MetaWindowGroup"
+2019-04-11 14:46:45 localhost journal:JS WARNING: [resource:///org/gnome/shell/ui/osdMonitorLabeler.js 59]: reference to undefined property "MetaDBusDisplayConfigSkeleton"
+2019-04-11 14:46:45 localhost systemd:Created slice User Slice of root.
+2019-04-11 14:46:45 localhost systemd:Starting User Slice of root.
+2019-04-11 14:46:45 localhost systemd-logind:New session 1 of user root.
+2019-04-11 14:46:45 localhost systemd:Started Session 1 of user root.
+2019-04-11 14:46:45 localhost systemd:Starting Session 1 of user root.
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+2019-04-11 14:46:46 localhost systemd:Starting Locale Service...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.locale1'
+2019-04-11 14:46:46 localhost systemd:Started Locale Service.
+2019-04-11 14:46:46 localhost journal:JS WARNING: [resource:///org/gnome/shell/ui/slider.js 38]: reference to undefined property "CallyActor"
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service'
+2019-04-11 14:46:46 localhost systemd:Starting Location Lookup Service...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='fi.w1.wpa_supplicant1' unit='wpa_supplicant.service'
+2019-04-11 14:46:46 localhost systemd:Starting WPA Supplicant daemon...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service'
+2019-04-11 14:46:46 localhost systemd:Starting PackageKit Daemon...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'fi.w1.wpa_supplicant1'
+2019-04-11 14:46:46 localhost systemd:Started WPA Supplicant daemon.
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.GeoClue2'
+2019-04-11 14:46:46 localhost systemd:Started Location Lookup Service.
+2019-04-11 14:46:46 localhost spice-vdagent[12861]:Cannot access vdagent virtio channel /dev/virtio-ports/com.redhat.spice.0
+2019-04-11 14:46:46 localhost gnome-session:gnome-session-binary[12616]: WARNING: App 'spice-vdagent.desktop' exited with code 1
+2019-04-11 14:46:46 localhost gnome-session-binary[12616]:WARNING: App 'spice-vdagent.desktop' exited with code 1
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.PackageKit'
+2019-04-11 14:46:46 localhost systemd:Started PackageKit Daemon.
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service'
+2019-04-11 14:46:46 localhost systemd:Starting Manage, Install and Generate Color Profiles...
+2019-04-11 14:46:46 localhost journal:Failed to get current display configuration state: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.Mutter.DisplayConfig" does not exist
+2019-04-11 14:46:46 localhost journal:Failed to load background 'file:///usr/share/backgrounds/gnome/adwaita-lock.jpg': Error opening file /usr/share/backgrounds/gnome/adwaita-lock.jpg: No such file or directory
+2019-04-11 14:46:46 localhost gnome-session-binary:Entering running state
+2019-04-11 14:46:46 localhost journal:failed to get edid data: EDID length is too small
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.ColorManager'
+2019-04-11 14:46:46 localhost systemd:Started Manage, Install and Generate Color Profiles.
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+2019-04-11 14:46:46 localhost systemd:Starting Fingerprint Authentication Daemon...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'net.reactivated.Fprint'
+2019-04-11 14:46:46 localhost systemd:Started Fingerprint Authentication Daemon.
+2019-04-11 14:46:46 localhost fprintd:Launching FprintObject
+2019-04-11 14:46:46 localhost journal:D-Bus service launched with name: net.reactivated.Fprint
+2019-04-11 14:46:46 localhost journal:entering main loop
+2019-04-11 14:46:46 localhost journal:Some code accessed the property 'AuthList' on the module 'authList'. That property was defined with 'let' or 'const' inside the module. This was previously supported, but is not correct according to the ES6 standard. Any symbols to be exported from a module must be defined with 'var'. The property access will work as previously for the time being, but please fix your code anyway.
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Activating via systemd: service name='org.freedesktop.realmd' unit='realmd.service'
+2019-04-11 14:46:46 localhost systemd:Starting Realm and Domain Configuration...
+2019-04-11 14:46:46 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.realmd'
+2019-04-11 14:46:46 localhost systemd:Started Realm and Domain Configuration.
+2019-04-11 14:46:47 localhost org.gnome.Shell.desktop:Window manager warning: "XF86RFKill" is not a valid accelerator
+2019-04-11 14:46:47 localhost journal:Error looking up permission: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for geolocation
+2019-04-11 14:46:47 localhost journal:failed to get edid: unable to get EDID for output
+2019-04-11 14:46:47 localhost journal:unable to get EDID for xrandr-VGA-1: unable to get EDID for output
+2019-04-11 14:46:47 localhost journal:JS WARNING: [resource:///org/gnome/shell/ui/layout.js 29]: reference to undefined property "MetaWindowX11"
+2019-04-11 14:46:47 localhost journal:JS ERROR: TypeError: item is undefined#012NMConnectionDevice<._activeConnectionChanged@resource:///org/gnome/shell/ui/status/network.js:398:13#012wrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22
+2019-04-11 14:46:47 localhost journal:JS ERROR: TypeError: item is undefined#012NMConnectionDevice<._activeConnectionChanged@resource:///org/gnome/shell/ui/status/network.js:398:13#012wrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22
+2019-04-11 14:46:47 localhost journal:JS ERROR: TypeError: item is undefined#012NMConnectionDevice<._activeConnectionChanged@resource:///org/gnome/shell/ui/status/network.js:398:13#012wrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22
+2019-04-11 14:46:47 localhost journal:JS ERROR: TypeError: item is undefined#012NMConnectionDevice<._activeConnectionChanged@resource:///org/gnome/shell/ui/status/network.js:398:13#012wrapper@resource:///org/gnome/gjs/modules/_legacy.js:82:22
+2019-04-11 14:46:47 localhost systemd:Received SIGRTMIN+21 from PID 471 (plymouthd).
+2019-04-11 14:45:52 localhost ntpd[1160]:0.0.0.0 c61c 0c clock_step -58.164049 s
+2019-04-11 14:45:52 localhost ntpd[1160]:0.0.0.0 c614 04 freq_mode
+2019-04-11 14:45:52 localhost systemd:Time has been changed
+2019-04-11 14:45:53 localhost ntpd[1160]:0.0.0.0 c618 08 no_sys_peer
+2019-04-11 14:46:14 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:46:18 localhost journal:No devices in use, exit
+2019-04-11 14:47:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:47:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:47:01 localhost systemd:Started Session 4 of user zabbix.
+2019-04-11 14:47:01 localhost systemd:Starting Session 4 of user zabbix.
+2019-04-11 14:47:01 localhost systemd:Started Session 3 of user zabbix.
+2019-04-11 14:47:01 localhost systemd:Starting Session 3 of user zabbix.
+2019-04-11 14:47:01 localhost systemd:Started Session 2 of user zabbix.
+2019-04-11 14:47:01 localhost systemd:Starting Session 2 of user zabbix.
+2019-04-11 14:47:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:47:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:47:14 localhost monit:'watchfrr' process is not running
+2019-04-11 14:47:14 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:47:14 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:47:45 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:48:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:48:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:48:01 localhost systemd:Started Session 7 of user zabbix.
+2019-04-11 14:48:01 localhost systemd:Starting Session 7 of user zabbix.
+2019-04-11 14:48:01 localhost systemd:Started Session 5 of user zabbix.
+2019-04-11 14:48:01 localhost systemd:Starting Session 5 of user zabbix.
+2019-04-11 14:48:01 localhost systemd:Started Session 6 of user zabbix.
+2019-04-11 14:48:01 localhost systemd:Starting Session 6 of user zabbix.
+2019-04-11 14:48:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:48:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:48:46 localhost monit:'watchfrr' process is not running
+2019-04-11 14:48:46 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:48:46 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:49:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:49:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:49:01 localhost systemd:Started Session 8 of user zabbix.
+2019-04-11 14:49:01 localhost systemd:Starting Session 8 of user zabbix.
+2019-04-11 14:49:01 localhost systemd:Started Session 10 of user zabbix.
+2019-04-11 14:49:01 localhost systemd:Starting Session 10 of user zabbix.
+2019-04-11 14:49:01 localhost systemd:Started Session 9 of user zabbix.
+2019-04-11 14:49:01 localhost systemd:Starting Session 9 of user zabbix.
+2019-04-11 14:49:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:49:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:49:17 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:50:01 localhost systemd:Started Session 11 of user root.
+2019-04-11 14:50:01 localhost systemd:Starting Session 11 of user root.
+2019-04-11 14:50:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:50:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:50:01 localhost systemd:Started Session 14 of user zabbix.
+2019-04-11 14:50:01 localhost systemd:Starting Session 14 of user zabbix.
+2019-04-11 14:50:01 localhost systemd:Started Session 13 of user root.
+2019-04-11 14:50:01 localhost systemd:Starting Session 13 of user root.
+2019-04-11 14:50:01 localhost systemd:Started Session 16 of user root.
+2019-04-11 14:50:01 localhost systemd:Starting Session 16 of user root.
+2019-04-11 14:50:01 localhost systemd:Started Session 17 of user zabbix.
+2019-04-11 14:50:01 localhost systemd:Starting Session 17 of user zabbix.
+2019-04-11 14:50:01 localhost systemd:Started Session 15 of user root.
+2019-04-11 14:50:01 localhost systemd:Starting Session 15 of user root.
+2019-04-11 14:50:01 localhost systemd:Started Session 12 of user zabbix.
+2019-04-11 14:50:01 localhost systemd:Starting Session 12 of user zabbix.
+2019-04-11 14:50:07 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:50:07 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:50:17 localhost monit:'watchfrr' process is not running
+2019-04-11 14:50:17 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:50:17 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:50:48 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:51:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:51:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:51:01 localhost systemd:Started Session 18 of user zabbix.
+2019-04-11 14:51:01 localhost systemd:Starting Session 18 of user zabbix.
+2019-04-11 14:51:01 localhost systemd:Started Session 20 of user zabbix.
+2019-04-11 14:51:01 localhost systemd:Starting Session 20 of user zabbix.
+2019-04-11 14:51:01 localhost systemd:Started Session 19 of user zabbix.
+2019-04-11 14:51:01 localhost systemd:Starting Session 19 of user zabbix.
+2019-04-11 14:51:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:51:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:51:24 localhost systemd-logind:Removed session 1.
+2019-04-11 14:51:49 localhost monit:'watchfrr' process is not running
+2019-04-11 14:51:49 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:51:49 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:52:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:52:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:52:01 localhost systemd:Started Session 23 of user zabbix.
+2019-04-11 14:52:01 localhost systemd:Starting Session 23 of user zabbix.
+2019-04-11 14:52:01 localhost systemd:Started Session 22 of user zabbix.
+2019-04-11 14:52:01 localhost systemd:Starting Session 22 of user zabbix.
+2019-04-11 14:52:01 localhost systemd:Started Session 21 of user zabbix.
+2019-04-11 14:52:01 localhost systemd:Starting Session 21 of user zabbix.
+2019-04-11 14:52:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:52:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:52:20 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:52:45 localhost systemd:Started Session 24 of user root.
+2019-04-11 14:52:45 localhost systemd-logind:New session 24 of user root.
+2019-04-11 14:52:45 localhost systemd:Starting Session 24 of user root.
+2019-04-11 14:52:45 localhost journal:ActUserManager: user (null) has no username (object path: /org/freedesktop/Accounts/User0, uid: 0)
+2019-04-11 14:52:45 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+2019-04-11 14:52:45 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+2019-04-11 14:52:46 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+2019-04-11 14:53:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:53:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:53:01 localhost systemd:Started Session 25 of user zabbix.
+2019-04-11 14:53:01 localhost systemd:Starting Session 25 of user zabbix.
+2019-04-11 14:53:01 localhost systemd:Started Session 27 of user zabbix.
+2019-04-11 14:53:01 localhost systemd:Starting Session 27 of user zabbix.
+2019-04-11 14:53:01 localhost systemd:Started Session 26 of user zabbix.
+2019-04-11 14:53:01 localhost systemd:Starting Session 26 of user zabbix.
+2019-04-11 14:53:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:53:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:53:20 localhost monit:'watchfrr' process is not running
+2019-04-11 14:53:20 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:53:20 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:53:51 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:53:52 localhost automount[1827]:add_host_addrs: hostname lookup failed: Name or service not known
+2019-04-11 14:54:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:54:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:54:01 localhost systemd:Started Session 29 of user zabbix.
+2019-04-11 14:54:01 localhost systemd:Starting Session 29 of user zabbix.
+2019-04-11 14:54:01 localhost systemd:Started Session 30 of user zabbix.
+2019-04-11 14:54:01 localhost systemd:Starting Session 30 of user zabbix.
+2019-04-11 14:54:01 localhost systemd:Started Session 28 of user zabbix.
+2019-04-11 14:54:01 localhost systemd:Starting Session 28 of user zabbix.
+2019-04-11 14:54:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:54:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:54:52 localhost monit:'watchfrr' process is not running
+2019-04-11 14:54:52 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:54:52 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:55:01 localhost systemd:Started Session 32 of user root.
+2019-04-11 14:55:01 localhost systemd:Starting Session 32 of user root.
+2019-04-11 14:55:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:55:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:55:01 localhost systemd:Started Session 36 of user zabbix.
+2019-04-11 14:55:01 localhost systemd:Starting Session 36 of user zabbix.
+2019-04-11 14:55:01 localhost systemd:Started Session 33 of user zabbix.
+2019-04-11 14:55:01 localhost systemd:Starting Session 33 of user zabbix.
+2019-04-11 14:55:01 localhost systemd:Started Session 31 of user root.
+2019-04-11 14:55:01 localhost systemd:Starting Session 31 of user root.
+2019-04-11 14:55:01 localhost systemd:Started Session 35 of user root.
+2019-04-11 14:55:01 localhost systemd:Starting Session 35 of user root.
+2019-04-11 14:55:01 localhost systemd:Started Session 34 of user zabbix.
+2019-04-11 14:55:01 localhost systemd:Starting Session 34 of user zabbix.
+2019-04-11 14:55:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:55:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:55:10 localhost systemd:Created slice User Slice of admin.
+2019-04-11 14:55:10 localhost systemd:Starting User Slice of admin.
+2019-04-11 14:55:10 localhost systemd-logind:New session 37 of user admin.
+2019-04-11 14:55:10 localhost systemd:Started Session 37 of user admin.
+2019-04-11 14:55:10 localhost systemd:Starting Session 37 of user admin.
+2019-04-11 14:55:10 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+2019-04-11 14:55:10 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+2019-04-11 14:55:10 localhost dbus[1131]:[system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+2019-04-11 14:55:10 localhost systemd:Starting Fingerprint Authentication Daemon...
+2019-04-11 14:55:10 localhost dbus[1131]:[system] Successfully activated service 'net.reactivated.Fprint'
+2019-04-11 14:55:10 localhost fprintd:Launching FprintObject
+2019-04-11 14:55:10 localhost journal:D-Bus service launched with name: net.reactivated.Fprint
+2019-04-11 14:55:10 localhost journal:entering main loop
+2019-04-11 14:55:10 localhost systemd:Started Fingerprint Authentication Daemon.
+2019-04-11 14:55:11 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+2019-04-11 14:55:12 localhost su:(to root) admin on pts/1
+2019-04-11 14:55:23 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:55:40 localhost journal:No devices in use, exit
+2019-04-11 14:56:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:56:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:56:01 localhost systemd:Started Session 40 of user zabbix.
+2019-04-11 14:56:01 localhost systemd:Starting Session 40 of user zabbix.
+2019-04-11 14:56:01 localhost systemd:Started Session 38 of user zabbix.
+2019-04-11 14:56:01 localhost systemd:Starting Session 38 of user zabbix.
+2019-04-11 14:56:01 localhost systemd:Started Session 39 of user zabbix.
+2019-04-11 14:56:01 localhost systemd:Starting Session 39 of user zabbix.
+2019-04-11 14:56:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:56:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:56:23 localhost monit:'watchfrr' process is not running
+2019-04-11 14:56:23 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:56:23 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:56:55 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:57:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:57:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:57:01 localhost systemd:Started Session 41 of user zabbix.
+2019-04-11 14:57:01 localhost systemd:Starting Session 41 of user zabbix.
+2019-04-11 14:57:01 localhost systemd:Started Session 42 of user zabbix.
+2019-04-11 14:57:01 localhost systemd:Starting Session 42 of user zabbix.
+2019-04-11 14:57:01 localhost systemd:Started Session 43 of user zabbix.
+2019-04-11 14:57:01 localhost systemd:Starting Session 43 of user zabbix.
+2019-04-11 14:57:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:57:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:57:55 localhost monit:'watchfrr' process is not running
+2019-04-11 14:57:55 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:57:55 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:58:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:58:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:58:01 localhost systemd:Started Session 44 of user zabbix.
+2019-04-11 14:58:01 localhost systemd:Starting Session 44 of user zabbix.
+2019-04-11 14:58:01 localhost systemd:Started Session 46 of user zabbix.
+2019-04-11 14:58:01 localhost systemd:Starting Session 46 of user zabbix.
+2019-04-11 14:58:01 localhost systemd:Started Session 45 of user zabbix.
+2019-04-11 14:58:01 localhost systemd:Starting Session 45 of user zabbix.
+2019-04-11 14:58:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:58:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:58:26 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 14:59:02 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 14:59:02 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 14:59:02 localhost systemd:Started Session 49 of user zabbix.
+2019-04-11 14:59:02 localhost systemd:Starting Session 49 of user zabbix.
+2019-04-11 14:59:02 localhost systemd:Started Session 48 of user zabbix.
+2019-04-11 14:59:02 localhost systemd:Starting Session 48 of user zabbix.
+2019-04-11 14:59:02 localhost systemd:Started Session 47 of user zabbix.
+2019-04-11 14:59:02 localhost systemd:Starting Session 47 of user zabbix.
+2019-04-11 14:59:07 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 14:59:07 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 14:59:26 localhost monit:'watchfrr' process is not running
+2019-04-11 14:59:26 localhost monit:'watchfrr' trying to restart
+2019-04-11 14:59:27 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 14:59:42 localhost automount[1827]:add_host_addrs: hostname lookup failed: Name or service not known
+2019-04-11 14:59:58 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 15:00:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:00:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:00:01 localhost systemd:Started Session 54 of user zabbix.
+2019-04-11 15:00:01 localhost systemd:Starting Session 54 of user zabbix.
+2019-04-11 15:00:01 localhost systemd:Started Session 51 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 51 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 50 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 50 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 55 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 55 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 56 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 56 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 58 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 58 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 57 of user root.
+2019-04-11 15:00:01 localhost systemd:Starting Session 57 of user root.
+2019-04-11 15:00:01 localhost systemd:Started Session 52 of user zabbix.
+2019-04-11 15:00:01 localhost systemd:Starting Session 52 of user zabbix.
+2019-04-11 15:00:01 localhost systemd:Started Session 53 of user zabbix.
+2019-04-11 15:00:01 localhost systemd:Starting Session 53 of user zabbix.
+2019-04-11 15:00:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:00:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:00:08 localhost systemd-logind:New session 59 of user admin.
+2019-04-11 15:00:08 localhost systemd:Started Session 59 of user admin.
+2019-04-11 15:00:08 localhost systemd:Starting Session 59 of user admin.
+2019-04-11 15:00:08 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+2019-04-11 15:00:09 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+2019-04-11 15:00:09 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+2019-04-11 15:00:27 localhost systemd-logind:Removed session 37.
+2019-04-11 15:00:27 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+2019-04-11 15:00:32 localhost systemd:Starting Cleanup of Temporary Directories...
+2019-04-11 15:00:32 localhost systemd:Started Cleanup of Temporary Directories.
+2019-04-11 15:00:58 localhost monit:'watchfrr' process is not running
+2019-04-11 15:00:58 localhost monit:'watchfrr' trying to restart
+2019-04-11 15:00:58 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 15:01:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:01:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:01:01 localhost systemd:Started Session 60 of user zabbix.
+2019-04-11 15:01:01 localhost systemd:Starting Session 60 of user zabbix.
+2019-04-11 15:01:01 localhost systemd:Started Session 61 of user zabbix.
+2019-04-11 15:01:01 localhost systemd:Starting Session 61 of user zabbix.
+2019-04-11 15:01:01 localhost systemd:Started Session 63 of user root.
+2019-04-11 15:01:01 localhost systemd:Starting Session 63 of user root.
+2019-04-11 15:01:01 localhost systemd:Started Session 62 of user zabbix.
+2019-04-11 15:01:01 localhost systemd:Starting Session 62 of user zabbix.
+2019-04-11 15:01:01 localhost ntpd[1160]:0.0.0.0 c612 02 freq_set kernel 10.012 PPM
+2019-04-11 15:01:01 localhost ntpd[1160]:0.0.0.0 c615 05 clock_sync
+2019-04-11 15:01:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:01:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:01:30 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 15:02:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:02:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:02:01 localhost systemd:Started Session 66 of user zabbix.
+2019-04-11 15:02:01 localhost systemd:Starting Session 66 of user zabbix.
+2019-04-11 15:02:01 localhost systemd:Started Session 65 of user zabbix.
+2019-04-11 15:02:01 localhost systemd:Starting Session 65 of user zabbix.
+2019-04-11 15:02:01 localhost systemd:Started Session 64 of user zabbix.
+2019-04-11 15:02:01 localhost systemd:Starting Session 64 of user zabbix.
+2019-04-11 15:02:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:02:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:02:30 localhost monit:'watchfrr' process is not running
+2019-04-11 15:02:30 localhost monit:'watchfrr' trying to restart
+2019-04-11 15:02:30 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 15:03:01 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 15:03:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:03:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:03:01 localhost systemd:Started Session 67 of user zabbix.
+2019-04-11 15:03:01 localhost systemd:Starting Session 67 of user zabbix.
+2019-04-11 15:03:01 localhost systemd:Started Session 68 of user zabbix.
+2019-04-11 15:03:01 localhost systemd:Starting Session 68 of user zabbix.
+2019-04-11 15:03:01 localhost systemd:Started Session 69 of user zabbix.
+2019-04-11 15:03:01 localhost systemd:Starting Session 69 of user zabbix.
+2019-04-11 15:03:07 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:03:07 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:04:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:04:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:04:01 localhost systemd:Started Session 71 of user zabbix.
+2019-04-11 15:04:01 localhost systemd:Starting Session 71 of user zabbix.
+2019-04-11 15:04:01 localhost systemd:Started Session 72 of user zabbix.
+2019-04-11 15:04:01 localhost systemd:Starting Session 72 of user zabbix.
+2019-04-11 15:04:01 localhost systemd:Started Session 70 of user zabbix.
+2019-04-11 15:04:01 localhost systemd:Starting Session 70 of user zabbix.
+2019-04-11 15:04:01 localhost monit:'watchfrr' process is not running
+2019-04-11 15:04:01 localhost monit:'watchfrr' trying to restart
+2019-04-11 15:04:01 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 15:04:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:04:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:04:15 localhost systemd-logind:Removed session 24.
+2019-04-11 15:04:15 localhost journal:g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+2019-04-11 15:04:33 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 15:04:39 localhost automount[1827]:add_host_addrs: hostname lookup failed: Name or service not known
+2019-04-11 15:04:39 localhost systemd:Removed slice User Slice of root.
+2019-04-11 15:04:39 localhost systemd:Stopping User Slice of root.
+2019-04-11 15:05:01 localhost systemd:Created slice User Slice of root.
+2019-04-11 15:05:01 localhost systemd:Starting User Slice of root.
+2019-04-11 15:05:01 localhost systemd:Started Session 73 of user root.
+2019-04-11 15:05:01 localhost systemd:Starting Session 73 of user root.
+2019-04-11 15:05:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:05:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:05:01 localhost systemd:Started Session 75 of user zabbix.
+2019-04-11 15:05:01 localhost systemd:Starting Session 75 of user zabbix.
+2019-04-11 15:05:01 localhost systemd:Started Session 76 of user zabbix.
+2019-04-11 15:05:01 localhost systemd:Starting Session 76 of user zabbix.
+2019-04-11 15:05:01 localhost systemd:Started Session 74 of user root.
+2019-04-11 15:05:01 localhost systemd:Starting Session 74 of user root.
+2019-04-11 15:05:01 localhost systemd:Started Session 78 of user root.
+2019-04-11 15:05:01 localhost systemd:Starting Session 78 of user root.
+2019-04-11 15:05:01 localhost systemd:Started Session 77 of user zabbix.
+2019-04-11 15:05:01 localhost systemd:Starting Session 77 of user zabbix.
+2019-04-11 15:05:02 localhost systemd:Removed slice User Slice of root.
+2019-04-11 15:05:02 localhost systemd:Stopping User Slice of root.
+2019-04-11 15:05:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:05:06 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:05:11 localhost dbus[1131]:[system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+2019-04-11 15:05:11 localhost systemd:Starting Fingerprint Authentication Daemon...
+2019-04-11 15:05:11 localhost dbus[1131]:[system] Successfully activated service 'net.reactivated.Fprint'
+2019-04-11 15:05:11 localhost systemd:Started Fingerprint Authentication Daemon.
+2019-04-11 15:05:11 localhost fprintd:Launching FprintObject
+2019-04-11 15:05:11 localhost journal:D-Bus service launched with name: net.reactivated.Fprint
+2019-04-11 15:05:11 localhost journal:entering main loop
+2019-04-11 15:05:17 localhost su:(to root) admin on pts/2
+2019-04-11 15:05:17 localhost dbus[1131]:[system] Activating service name='org.freedesktop.problems' (using servicehelper)
+2019-04-11 15:05:17 localhost dbus[1131]:[system] Successfully activated service 'org.freedesktop.problems'
+2019-04-11 15:05:33 localhost monit:'watchfrr' process is not running
+2019-04-11 15:05:33 localhost monit:'watchfrr' trying to restart
+2019-04-11 15:05:33 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 15:05:41 localhost journal:No devices in use, exit
+2019-04-11 15:06:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:06:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:06:01 localhost systemd:Started Session 81 of user zabbix.
+2019-04-11 15:06:01 localhost systemd:Starting Session 81 of user zabbix.
+2019-04-11 15:06:01 localhost systemd:Started Session 80 of user zabbix.
+2019-04-11 15:06:01 localhost systemd:Starting Session 80 of user zabbix.
+2019-04-11 15:06:01 localhost systemd:Started Session 79 of user zabbix.
+2019-04-11 15:06:01 localhost systemd:Starting Session 79 of user zabbix.
+2019-04-11 15:06:04 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+2019-04-11 15:06:07 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:06:07 localhost systemd:Stopping User Slice of zabbix.
+2019-04-11 15:07:01 localhost systemd:Created slice User Slice of zabbix.
+2019-04-11 15:07:01 localhost systemd:Starting User Slice of zabbix.
+2019-04-11 15:07:01 localhost systemd:Started Session 84 of user zabbix.
+2019-04-11 15:07:01 localhost systemd:Starting Session 84 of user zabbix.
+2019-04-11 15:07:01 localhost systemd:Started Session 82 of user zabbix.
+2019-04-11 15:07:01 localhost systemd:Starting Session 82 of user zabbix.
+2019-04-11 15:07:01 localhost systemd:Started Session 83 of user zabbix.
+2019-04-11 15:07:01 localhost systemd:Starting Session 83 of user zabbix.
+2019-04-11 15:07:04 localhost monit:'watchfrr' process is not running
+2019-04-11 15:07:04 localhost monit:'watchfrr' trying to restart
+2019-04-11 15:07:05 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+2019-04-11 15:07:06 localhost systemd:Removed slice User Slice of zabbix.
+2019-04-11 15:07:06 localhost systemd:Stopping User Slice of zabbix.
