@@ -9,7 +9,7 @@
 fsd=fsd1,anchor=/data,depth=1,width=30,files=3000,size=(6216k,20,1.1m,20,1.6m,20,2.6m,20,4.2m,20),shared=yes
 #fsd=fsd1,anchor=/var/log/oceanstor,depth=1,width=22,files=3000,size=(6216k,20,1.1m,20,1.6m,20,2.6m,20,4.2m,20),shared=no
 
-fwd=fwd1,fsd=fsd1,operation=read,xfersize=1M,fileio=sequential,fileselect=random,threads=32
+fwd=fwd1,fsd=fsd1,operation=read,xfersize=2M,fileio=sequential,fileselect=random,threads=32
 
 # This removes the old file structure
 # rd=rd1,fwd=fwd1,fwdrate=max,format=(clean,only),elapsed=10,interval=1

@@ -1,0 +1,183 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_8k_256t_w30_f3000_20190411/config.html</title><pre>
+Output from script /root/vdbench50407/linux/config.sh: 
+
+Thu Apr 11 17:27:41 +07 2019
+>>>>>uname -a
+Linux host-10-233-233-124 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+Thu Apr 11 17:27:41 +07 2019
+>>>>>ifconfig -a
+bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
+        inet 192.168.133.47  netmask 255.255.255.0  broadcast 192.168.133.255
+        inet6 fe80::f816:3eff:fef1:e233  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
+        RX packets 11214275  bytes 885535094 (844.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 46255702  bytes 70182094696 (65.3 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp4s4: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
+        RX packets 2786560  bytes 220825048 (210.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11569333  bytes 17553882275 (16.3 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp4s5: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
+        RX packets 2787554  bytes 220927714 (210.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11559261  bytes 17538272393 (16.3 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp4s6: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
+        RX packets 2820221  bytes 221923000 (211.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11567382  bytes 17550835068 (16.3 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp4s7: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
+        ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
+        RX packets 2819940  bytes 221859332 (211.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11559726  bytes 17539104960 (16.3 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.233.233.124  netmask 255.255.255.0  broadcast 10.233.233.255
+        inet6 fe80::f816:3eff:fe79:9e62  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:79:9e:62  txqueuelen 1000  (Ethernet)
+        RX packets 16151  bytes 1277014 (1.2 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11565  bytes 4814623 (4.5 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 49598  bytes 198341258 (189.1 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 49598  bytes 198341258 (189.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:a8:d4:42  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 52:54:00:a8:d4:42  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Thu Apr 11 17:27:41 +07 2019
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root),898(varnish) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Thu Apr 11 17:27:41 +07 2019
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=131969648k,nr_inodes=32992412,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+/dev/mapper/rhel-root on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=22,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=21798)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
+/dev/vda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/md127 on /data type xfs (rw,relatime,seclabel,attr2,inode64,sunit=1024,swidth=6144,noquota)
+/dev/mapper/rhel-home on /home type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/mapper/rhel-var on /var type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+tmpfs on /var/lib/varnish type tmpfs (rw,nosuid,noatime,nodiratime,rootcontext=system_u:object_r:varnishd_var_lib_t:s0,seclabel,size=1048576k)
+/dev/mapper/rhel-var_log on /var/log type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+/etc/auto.centralizelogs on /centralizelogs type autofs (rw,relatime,fd=6,pgrp=1827,timeout=180,minproto=5,maxproto=5,direct,pipe_ino=40243)
+/etc/auto.iso on /mnt type autofs (rw,relatime,fd=11,pgrp=1827,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=40252)
+tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=42,gid=42)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=1000,gid=900)
+Thu Apr 11 17:27:41 +07 2019
+>>>>>memory
+MemTotal:       263973264 kB
+MemFree:         1597144 kB
+MemAvailable:   259491452 kB
+Buffers:               0 kB
+Cached:         258405404 kB
+SwapCached:            0 kB
+Active:         196926164 kB
+Inactive:       62372000 kB
+Active(anon):     975492 kB
+Inactive(anon):    24948 kB
+Active(file):   195950672 kB
+Inactive(file): 62347052 kB
+Unevictable:       82180 kB
+Mlocked:           82180 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                12 kB
+Writeback:             0 kB
+AnonPages:        973980 kB
+Mapped:           124832 kB
+Shmem:            108200 kB
+Slab:            1132164 kB
+SReclaimable:     894384 kB
+SUnreclaim:       237780 kB
+KernelStack:      172144 kB
+PageTables:        41752 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    131986632 kB
+Committed_AS:   169235696 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      428672 kB
+VmallocChunk:   34359279616 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    233472 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      224768 kB
+DirectMap2M:     6066176 kB
+DirectMap1G:    264241152 kB
+              total        used        free      shared  buff/cache   available
+Mem:      263973264     2838048     1597648      108200   259537568   259491956
+Low:      263973264   262375616     1597648
+High:             0           0           0
+Swap:             0           0           0
+Thu Apr 11 17:27:41 +07 2019
+>>>>>ps -ef | grep -i vdb
+root     27180 16141  0 17:27 pts/0    00:00:00 /bin/bash ./vdbench -f fs_write_4k_128.txt -o nvme_1vm_raid0_read_seq_ran_8k_256t_w30_f3000_20190411
+root     27182 27180 71 17:27 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f fs_write_4k_128.txt -o nvme_1vm_raid0_read_seq_ran_8k_256t_w30_f3000_20190411
+root     27236 27182  0 17:27 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-190411-17.27.40.475 -l localhost-0 -p 5570
+root     27240 27236 45 17:27 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-190411-17.27.40.475 -l localhost-0 -p 5570
+root     27297 27182  0 17:27 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/nvme_1vm_raid0_read_seq_ran_8k_256t_w30_f3000_20190411 localhost
+root     27313 27297  0 17:27 pts/0    00:00:00 grep -i vdb
+

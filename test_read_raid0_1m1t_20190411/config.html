@@ -1,23 +1,23 @@
 <title>Vdbench test_read_raid0_1m1t_20190411/config.html</title><pre>
 Output from script /root/vdbench50407/linux/config.sh: 
 
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>uname -a
 Linux host-10-233-233-124 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>ifconfig -a
 bond0: flags=5187<UP,BROADCAST,RUNNING,MASTER,MULTICAST>  mtu 1500
         inet 192.168.133.47  netmask 255.255.255.0  broadcast 192.168.133.255
         inet6 fe80::f816:3eff:fef1:e233  prefixlen 64  scopeid 0x20<link>
         ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
-        RX packets 11214271  bytes 885534798 (844.5 MiB)
+        RX packets 11214273  bytes 885534946 (844.5 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 46255698  bytes 70182094512 (65.3 GiB)
+        TX packets 46255700  bytes 70182094604 (65.3 GiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 enp4s4: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
         ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
-        RX packets 2786556  bytes 220824752 (210.5 MiB)
+        RX packets 2786558  bytes 220824900 (210.5 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 11569332  bytes 17553882229 (16.3 GiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
@@ -33,32 +33,32 @@ enp4s6: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
         ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
         RX packets 2820221  bytes 221923000 (211.6 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11567381  bytes 17550835022 (16.3 GiB)
+        TX packets 11567382  bytes 17550835068 (16.3 GiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 enp4s7: flags=6211<UP,BROADCAST,RUNNING,SLAVE,MULTICAST>  mtu 1500
         ether fa:16:3e:f1:e2:33  txqueuelen 1000  (Ethernet)
         RX packets 2819940  bytes 221859332 (211.5 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11559725  bytes 17539104914 (16.3 GiB)
+        TX packets 11559726  bytes 17539104960 (16.3 GiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.233.233.124  netmask 255.255.255.0  broadcast 10.233.233.255
         inet6 fe80::f816:3eff:fe79:9e62  prefixlen 64  scopeid 0x20<link>
         ether fa:16:3e:79:9e:62  txqueuelen 1000  (Ethernet)
-        RX packets 8406  bytes 674023 (658.2 KiB)
+        RX packets 11545  bytes 925872 (904.1 KiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 5582  bytes 2546626 (2.4 MiB)
+        TX packets 7946  bytes 3715056 (3.5 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 21277  bytes 193894221 (184.9 MiB)
+        RX packets 30785  bytes 195386070 (186.3 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 21277  bytes 193894221 (184.9 MiB)
+        TX packets 30785  bytes 195386070 (186.3 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -76,10 +76,10 @@ virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>id
 uid=0(root) gid=0(root) groups=0(root),898(varnish) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>mount
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -120,44 +120,44 @@ sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
 tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=42,gid=42)
 tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=1000,gid=900)
 tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700)
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>memory
 MemTotal:       263973264 kB
-MemFree:         3318012 kB
-MemAvailable:   259439408 kB
+MemFree:         1574984 kB
+MemAvailable:   259462088 kB
 Buffers:               0 kB
-Cached:         256267348 kB
+Cached:         258281308 kB
 SwapCached:            0 kB
-Active:         187947964 kB
-Inactive:       69224720 kB
-Active(anon):     988644 kB
-Inactive(anon):    16772 kB
-Active(file):   186959320 kB
-Inactive(file): 69207948 kB
+Active:         192952552 kB
+Inactive:       66221716 kB
+Active(anon):     976264 kB
+Inactive(anon):    24952 kB
+Active(file):   191976288 kB
+Inactive(file): 66196764 kB
 Unevictable:       82180 kB
 Mlocked:           82180 kB
 SwapTotal:             0 kB
 SwapFree:              0 kB
-Dirty:                20 kB
+Dirty:                84 kB
 Writeback:             0 kB
-AnonPages:        952148 kB
-Mapped:           130964 kB
-Shmem:            100104 kB
-Slab:            1498360 kB
-SReclaimable:    1251928 kB
-SUnreclaim:       246432 kB
-KernelStack:      172304 kB
-PageTables:        43292 kB
+AnonPages:        978392 kB
+Mapped:           130480 kB
+Shmem:            108256 kB
+Slab:            1248816 kB
+SReclaimable:    1011852 kB
+SUnreclaim:       236964 kB
+KernelStack:      172912 kB
+PageTables:        43484 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    131986632 kB
-Committed_AS:   169265928 kB
+Committed_AS:   169239436 kB
 VmallocTotal:   34359738367 kB
 VmallocUsed:      428672 kB
 VmallocChunk:   34359279616 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:    223232 kB
+AnonHugePages:    245760 kB
 CmaTotal:              0 kB
 CmaFree:               0 kB
 HugePages_Total:       0
@@ -169,16 +169,16 @@ DirectMap4k:      224768 kB
 DirectMap2M:     6066176 kB
 DirectMap1G:    264241152 kB
               total        used        free      shared  buff/cache   available
-Mem:      263973264     2889544     3318012      100104   257765708   259439408
-Low:      263973264   260655252     3318012
+Mem:      263973264     2867652     1575488      108256   259530124   259462592
+Low:      263973264   262397776     1575488
 High:             0           0           0
 Swap:             0           0           0
-Thu Apr 11 16:11:57 +07 2019
+Thu Apr 11 16:51:26 +07 2019
 >>>>>ps -ef | grep -i vdb
-root     31772 31585  0 16:11 pts/1    00:00:00 /bin/bash ./vdbench -f fs_write_4k_128.txt -o test_read_raid0_1m1t_20190411
-root     31774 31772 63 16:11 pts/1    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f fs_write_4k_128.txt -o test_read_raid0_1m1t_20190411
-root     31828 31774  0 16:11 pts/1    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-190411-16.11.57.244 -l localhost-0 -p 5570
-root     31832 31828 44 16:11 pts/1    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-190411-16.11.57.244 -l localhost-0 -p 5570
-root     31889 31774  0 16:11 pts/1    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/test_read_raid0_1m1t_20190411 localhost
-root     31905 31889  0 16:11 pts/1    00:00:00 grep -i vdb
+root     18215 16141  0 16:51 pts/0    00:00:00 /bin/bash ./vdbench -f fs_write_4k_128.txt -o test_read_raid0_1m1t_20190411
+root     18217 18215 68 16:51 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f fs_write_4k_128.txt -o test_read_raid0_1m1t_20190411
+root     18271 18217  0 16:51 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-190411-16.51.25.522 -l localhost-0 -p 5570
+root     18275 18271  0 16:51 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-190411-16.51.25.522 -l localhost-0 -p 5570
+root     18332 18217  0 16:51 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/test_read_raid0_1m1t_20190411 localhost
+root     18348 18332  0 16:51 pts/0    00:00:00 grep -i vdb
 

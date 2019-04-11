@@ -1,0 +1,74 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_8k_64t_w30_f3000_20190411/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+17:25:03.980 17:25:03.979 SlaveJvm execution parameter:  '-m localhost'
+17:25:03.980 17:25:03.979 SlaveJvm execution parameter:  '-n localhost-10-190411-17.25.03.678'
+17:25:03.980 17:25:03.979 SlaveJvm execution parameter:  '-l localhost-0'
+17:25:03.980 17:25:03.979 SlaveJvm execution parameter:  '-p 5570'
+17:25:03.980 17:25:03.979 SlaveJvm positional parameter: 'SlaveJvm'
+17:25:04.102 17:25:04.100 successfully connected to master localhost
+17:25:04.102 17:25:04.101 Connection to localhost using port 5570 successful
+17:25:04.179 17:25:04.177 ticks_per_second: 100
+17:25:04.184 17:25:04.183 execute(): ls -l /data
+17:25:04.204 17:25:04.203 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_1174290147">rd1 For loops: None</A>
+
+17:25:04.392 17:25:04.391 Beginning of run setup
+17:25:04.392 17:25:04.391 **********************
+17:25:04.393 
+17:25:04.393 
+17:25:04.423 17:25:04.423 File '/var/log/messages.1' does not exist. Monitoring bypassed
+17:25:04.448 17:25:04.447 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+17:25:04.457 17:25:04.457 Completed the creation of the directory list for /data: 30 directories.
+17:25:05.344 17:25:05.344 Generated 90,000 file names; total anchor size: 274.026g (294,232,912,786)
+17:25:05.344 17:25:05.344 During anchor creation for anchor=/data there were 30 directories and 90000 files
+17:25:05.345 17:25:05.344 Completed initializeFileAnchor for fsd1: 0.90
+17:25:05.406 17:25:05.405 Started 64 threads for fwd=fwd1,fsd=fsd1,operation=read
+17:25:05.406 17:25:05.405 Started 64 FwgThreads for rd=rd1 For loops: None
+17:25:05.406 17:25:05.406 Waiting for task synchronization
+17:25:05.406 17:25:05.406 task_wait_start_complete: FwgThread read /data 1
+17:25:05.606 17:25:05.606 Requesting full garbage collection
+17:25:05.607 17:25:05.607 GcTracker: cum:   5 intv:  5 ms:      48 mss:  0.00% Heap_MB max:   911 curr:   221 used:   143 free:    78 
+17:25:05.661 17:25:05.661 GcTracker: cum:   7 intv:  2 ms:      52 mss:  0.00% Heap_MB max:   911 curr:   352 used:    28 free:   323 
+17:25:05.661 17:25:05.661 task_wait_start_complete() end
+
+<a name="_1174290147"></a><i><b>17:25:06.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+17:25:06.003 17:25:06.002 task_run_all(): 65 tasks
+17:25:09.431 17:25:09.431 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:25:09.432 17:25:09.431 sendMessageToConsole: /var/log/messages: 2019-04-11 17:25:07 localhost systemd:Removed slice User Slice of zabbix.
+17:25:09.432 17:25:09.431 sendMessageToConsole: /var/log/messages: 2019-04-11 17:25:07 localhost systemd:Stopping User Slice of zabbix.
+17:25:09.432 17:25:09.431 sendMessageToConsole: 
+17:25:14.437 17:25:14.437 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:25:14.438 17:25:14.437 sendMessageToConsole: /var/log/messages: 2019-04-11 17:25:13 localhost automount[1827]:add_host_addrs: hostname lookup failed: Name or service not known
+17:25:14.438 17:25:14.437 sendMessageToConsole: /var/log/messages: 2019-04-11 17:25:13 localhost systemd:Removed slice User Slice of root.
+17:25:14.438 17:25:14.437 sendMessageToConsole: /var/log/messages: 2019-04-11 17:25:13 localhost systemd:Stopping User Slice of root.
+17:25:14.438 17:25:14.437 sendMessageToConsole: 
+17:26:04.492 17:26:04.491 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Created slice User Slice of zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Starting User Slice of zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Started Session 611 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Starting Session 611 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Started Session 612 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Starting Session 612 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Started Session 613 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:01 localhost systemd:Starting Session 613 of user zabbix.
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:03 localhost monit:'watchfrr' process is not running
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:03 localhost monit:'watchfrr' trying to restart
+17:26:04.492 17:26:04.492 sendMessageToConsole: /var/log/messages: 2019-04-11 17:26:03 localhost monit:'watchfrr' start: '/usr/bin/systemctl start frr.service'
+17:26:04.492 17:26:04.492 sendMessageToConsole: 
+17:26:06.145 17:26:06.144 
+17:26:06.145 17:26:06.144 Miscellaneous statistics:
+17:26:06.145 17:26:06.144 READ_OPENS          Files opened for read activity:             314,895
+17:26:06.145 17:26:06.144 FILE_BUSY           File busy:                                      206
+17:26:06.145 17:26:06.144 FILE_CLOSES         Close requests:                             314,895
+17:26:06.145 17:26:06.144 
+17:26:06.145 17:26:06.144 Java Heap in MB. max:  910.500; current:  164.500; used:   97.599; free:   66.901
+17:26:06.145 17:26:06.145 Maximum native memory allocation:      524,288; Current allocation:      524,288
+17:26:06.145 17:26:06.145 End of run
+17:26:06.145 17:26:06.145 **********
+17:26:06.145 
+17:26:06.145 
+17:26:06.339 17:26:06.339 Master is requesting slave shutdown
+17:26:06.339 17:26:06.339 Java Heap in MB. max:  910.500; current:  164.500; used:   97.608; free:   66.892
