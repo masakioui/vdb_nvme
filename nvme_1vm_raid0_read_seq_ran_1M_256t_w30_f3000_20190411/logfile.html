@@ -1,0 +1,46 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_1M_256t_w30_f3000_20190411/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+15:52:17.273 input argument scanned: '-ffs_write_4k_128.txt'
+15:52:17.275 input argument scanned: '-onvme_1vm_raid0_read_seq_ran_1M_256t_w30_f3000_20190411'
+15:52:17.275 java.vendor                   Oracle Corporation
+15:52:17.275 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre
+15:52:17.275 java.vm.specification.version 1.8
+15:52:17.275 java.vm.version               25.161-b14
+15:52:17.275 java.vm.vendor                Oracle Corporation
+15:52:17.275 java.specification.version    1.8
+15:52:17.275 java.class.version            52.0
+15:52:17.275 user.name                     root
+15:52:17.275 user.dir                      /root/vdbench50407
+15:52:17.275 java.io.tmpdir                /tmp
+15:52:17.275 java.class.path               ./:./classes:./vdbench.jar
+15:52:17.275 os.name                       Linux
+15:52:17.275 os.arch                       amd64
+15:52:17.275 os.version                    3.10.0-862.el7.x86_64
+15:52:17.275 sun.arch.data.model           64
+15:52:17.285 Flushing all reports
+15:52:17.318 Creating anchor for /data,fsd=fsd1
+15:52:17.364 Anchor size: anchor=/data: dirs:           30; files:       90,000; bytes:   274.026g (294,232,912,786)
+15:52:17.497 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-190412-15.52.17.171 -l localhost-0 -p 5570   
+15:52:17.726 Slave localhost-0 (pid  26298) connected to master 26239
+15:52:17.754 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_1289696681">rd1 For loops: None</A>
+
+15:52:17.968 Flushing all reports
+15:52:17.969 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/data threads=256 skew= 0.00 operation=read 
+15:52:17.990 Waiting for synchronization of all slaves
+15:52:19.191 Synchronization of all slaves complete
+
+<a name="_1289696681"></a><i><b>15:52:20.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+Apr 12, 2019 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ....open.... ...close....
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp
+15:52:21.408            1  22515  1.272  18.5 12.2 100.0  22515  1.272    0.0  0.000 18451  0.00  18451  859336  5992  6.315  5808  0.212
+15:52:22.612            2  38736  2.370  97.7 87.1 100.0  38736  2.370    0.0  0.000 31801  0.00  31801  860862 10301  1.923 10272  0.033
+15:52:23.035 Reporting delay:     2 (  1) (  1) 15:52:22.000   0.003   0.597   0.597   1.034   0.437
+15:52:23.114            3  22049  5.512  98.0 92.7 100.0  22049  5.512    0.0  0.000 18096  0.00  18096  860590  5647  0.149  5769  0.024
+15:52:24.019            4  24165  4.540  97.6 96.1 100.0  24165  4.540    0.0  0.000 19808  0.00  19808  859550  6522  0.046  6362  0.005
+15:52:25.030            5  20768 10.072  96.0 94.4 100.0  20768 10.072    0.0  0.000 17037  0.00  17037  860228  5327  0.161  5326  0.840
+15:52:26.022            6  19891  8.952  97.8 96.9 100.0  19891  8.952    0.0  0.000 16271  0.00  16271  857780  5234  0.370  5232  8.517

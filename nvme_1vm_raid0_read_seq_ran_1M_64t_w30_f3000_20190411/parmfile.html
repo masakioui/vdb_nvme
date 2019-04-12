@@ -1,3 +1,7 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_1M_64t_w30_f3000_20190411/parmfile.html</title><pre>
+
+* Contents of parameter file: /root/vdbench50407/fs_write_4k_128.txt
+
 #hd=default,vdbench=/root/vdbench50407,user=root,shell=ssh,master=10.233.233.124
 
 
@@ -9,7 +13,7 @@
 fsd=fsd1,anchor=/data,depth=1,width=30,files=3000,size=(6216k,20,1.1m,20,1.6m,20,2.6m,20,4.2m,20),shared=yes
 #fsd=fsd1,anchor=/var/log/oceanstor,depth=1,width=22,files=3000,size=(6216k,20,1.1m,20,1.6m,20,2.6m,20,4.2m,20),shared=no
 
-fwd=fwd1,fsd=fsd1,operation=read,xfersize=1M,fileio=sequential,fileselect=random,threads=256
+fwd=fwd1,fsd=fsd1,operation=read,xfersize=1M,fileio=sequential,fileselect=random,threads=128
 
 # This removes the old file structure
 # rd=rd1,fwd=fwd1,fwdrate=max,format=(clean,only),elapsed=10,interval=1

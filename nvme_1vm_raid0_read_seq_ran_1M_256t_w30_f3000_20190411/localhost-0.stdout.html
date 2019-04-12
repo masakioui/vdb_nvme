@@ -1,0 +1,37 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_1M_256t_w30_f3000_20190411/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+15:52:17.600 15:52:17.599 SlaveJvm execution parameter:  '-m localhost'
+15:52:17.600 15:52:17.600 SlaveJvm execution parameter:  '-n localhost-10-190412-15.52.17.171'
+15:52:17.600 15:52:17.600 SlaveJvm execution parameter:  '-l localhost-0'
+15:52:17.601 15:52:17.600 SlaveJvm execution parameter:  '-p 5570'
+15:52:17.601 15:52:17.600 SlaveJvm positional parameter: 'SlaveJvm'
+15:52:17.703 15:52:17.701 successfully connected to master localhost
+15:52:17.703 15:52:17.702 Connection to localhost using port 5570 successful
+15:52:17.801 15:52:17.800 ticks_per_second: 100
+15:52:17.807 15:52:17.806 execute(): ls -l /data
+15:52:17.827 15:52:17.827 Configuration interpretation took 0.03 seconds
+
+Link to Run Definitions:         <A HREF="#_1289696681">rd1 For loops: None</A>
+
+15:52:18.035 15:52:18.035 Beginning of run setup
+15:52:18.036 15:52:18.035 **********************
+15:52:18.036 
+15:52:18.036 
+15:52:18.054 15:52:18.054 File '/var/log/messages.1' does not exist. Monitoring bypassed
+15:52:18.091 15:52:18.090 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+15:52:18.100 15:52:18.100 Completed the creation of the directory list for /data: 30 directories.
+15:52:18.982 15:52:18.981 Generated 90,000 file names; total anchor size: 274.026g (294,232,912,786)
+15:52:18.982 15:52:18.982 During anchor creation for anchor=/data there were 30 directories and 90000 files
+15:52:18.982 15:52:18.982 Completed initializeFileAnchor for fsd1: 0.89
+15:52:19.034 15:52:19.033 Started 256 threads for fwd=fwd1,fsd=fsd1,operation=read
+15:52:19.034 15:52:19.034 Started 256 FwgThreads for rd=rd1 For loops: None
+15:52:19.034 15:52:19.034 Waiting for task synchronization
+15:52:19.034 15:52:19.034 Requesting full garbage collection
+15:52:19.035 15:52:19.034 GcTracker: cum:   5 intv:  5 ms:      71 mss:  0.00% Heap_MB max:   911 curr:   221 used:   149 free:    72 
+15:52:19.093 15:52:19.093 GcTracker: cum:   7 intv:  2 ms:      57 mss:  0.00% Heap_MB max:   911 curr:   362 used:    32 free:   330 
+15:52:19.093 15:52:19.093 task_wait_start_complete() end
+
+<a name="_1289696681"></a><i><b>15:52:20.001 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+15:52:20.003 15:52:20.002 task_run_all(): 257 tasks

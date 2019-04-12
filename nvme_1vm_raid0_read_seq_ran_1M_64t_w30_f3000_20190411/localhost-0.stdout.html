@@ -1,0 +1,58 @@
+<title>Vdbench nvme_1vm_raid0_read_seq_ran_1M_64t_w30_f3000_20190411/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+11:00:01.718 11:00:01.717 SlaveJvm execution parameter:  '-m localhost'
+11:00:01.718 11:00:01.718 SlaveJvm execution parameter:  '-n localhost-10-190412-11.00.01.250'
+11:00:01.718 11:00:01.718 SlaveJvm execution parameter:  '-l localhost-0'
+11:00:01.718 11:00:01.718 SlaveJvm execution parameter:  '-p 5570'
+11:00:01.719 11:00:01.718 SlaveJvm positional parameter: 'SlaveJvm'
+11:00:01.842 11:00:01.841 successfully connected to master localhost
+11:00:01.842 11:00:01.842 Connection to localhost using port 5570 successful
+11:00:01.943 11:00:01.940 ticks_per_second: 100
+11:00:01.947 11:00:01.947 execute(): ls -l /data
+11:00:01.965 11:00:01.965 Configuration interpretation took 0.02 seconds
+
+Link to Run Definitions:         <A HREF="#_1174290147">rd1 For loops: None</A>
+
+11:00:02.177 11:00:02.176 Beginning of run setup
+11:00:02.177 11:00:02.176 **********************
+11:00:02.177 
+11:00:02.178 
+11:00:02.193 11:00:02.193 File '/var/log/messages.1' does not exist. Monitoring bypassed
+11:00:02.233 11:00:02.233 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+11:00:02.242 11:00:02.242 Completed the creation of the directory list for /data: 30 directories.
+11:00:03.112 11:00:03.112 Generated 90,000 file names; total anchor size: 274.026g (294,232,912,786)
+11:00:03.113 11:00:03.112 During anchor creation for anchor=/data there were 30 directories and 90000 files
+11:00:03.113 11:00:03.113 Completed initializeFileAnchor for fsd1: 0.88
+11:00:03.144 11:00:03.144 Started 128 threads for fwd=fwd1,fsd=fsd1,operation=read
+11:00:03.144 11:00:03.144 Started 128 FwgThreads for rd=rd1 For loops: None
+11:00:03.144 11:00:03.144 Waiting for task synchronization
+11:00:03.144 11:00:03.144 Requesting full garbage collection
+11:00:03.145 11:00:03.145 GcTracker: cum:   5 intv:  5 ms:      63 mss:  0.00% Heap_MB max:   911 curr:   221 used:   144 free:    77 
+11:00:03.204 11:00:03.203 GcTracker: cum:   7 intv:  2 ms:      56 mss:  0.00% Heap_MB max:   911 curr:   361 used:    29 free:   332 
+11:00:03.204 11:00:03.203 task_wait_start_complete() end
+
+<a name="_1174290147"></a><i><b>11:00:04.002 Starting RD=rd1; elapsed=60; fwdrate=max. For loops: None</b></i>
+
+11:00:04.003 11:00:04.003 task_run_all(): 129 tasks
+11:00:12.661 11:00:12.660 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:00:12.661 11:00:12.660 sendMessageToConsole: /var/log/messages: 2019-04-12 11:00:07 localhost systemd:Removed slice User Slice of zabbix.
+11:00:12.661 11:00:12.660 sendMessageToConsole: /var/log/messages: 2019-04-12 11:00:07 localhost systemd:Stopping User Slice of zabbix.
+11:00:12.661 11:00:12.660 sendMessageToConsole: 
+11:00:22.680 11:00:22.679 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:00:22.680 11:00:22.679 sendMessageToConsole: /var/log/messages: 2019-04-12 11:00:19 localhost monit:'watchfrr' failed to start (exit status 5) -- '/usr/bin/systemctl start frr.service': Failed to start frr.service: Unit not found.
+11:00:22.680 11:00:22.680 sendMessageToConsole: 
+11:01:05.015 11:01:05.014 
+11:01:05.026 11:01:05.014 Miscellaneous statistics:
+11:01:05.026 11:01:05.015 READ_OPENS          Files opened for read activity:             357,033
+11:01:05.026 11:01:05.015 FILE_BUSY           File busy:                                      510
+11:01:05.026 11:01:05.015 FILE_CLOSES         Close requests:                             357,033
+11:01:05.026 11:01:05.015 
+11:01:05.026 11:01:05.015 Java Heap in MB. max:  910.500; current:  355.500; used:  232.035; free:  123.465
+11:01:05.027 11:01:05.015 Maximum native memory allocation:  134,217,728; Current allocation:  134,217,728
+11:01:05.027 11:01:05.015 End of run
+11:01:05.027 11:01:05.015 **********
+11:01:05.027 
+11:01:05.027 
+11:01:06.018 11:01:06.018 Master is requesting slave shutdown
+11:01:06.019 11:01:06.018 Java Heap in MB. max:  910.500; current:  355.500; used:  232.035; free:  123.465
